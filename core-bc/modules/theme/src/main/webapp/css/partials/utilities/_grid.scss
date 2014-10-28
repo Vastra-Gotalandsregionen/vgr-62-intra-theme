@@ -1,0 +1,40 @@
+
+
+body {
+	#wrapper {
+			padding: 0;
+	}
+}
+
+.container-normal {
+	max-width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+
+	@include small {
+		max-width: $container-width-small;
+	}
+
+	@include medium {
+		max-width: $container-width-medium;
+	}
+
+	@include large {
+		max-width: $container-width-large;
+	}
+}
+
+
+
+
+.row {
+
+	[class^="span"],
+	[class*=" span"] {
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+
+}

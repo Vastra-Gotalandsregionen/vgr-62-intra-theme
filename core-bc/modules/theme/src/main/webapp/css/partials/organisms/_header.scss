@@ -1,0 +1,55 @@
+
+#header {
+	@include pie-clearfix();
+
+	background: $vgrintra-white;
+
+	#topBar {
+		background: $vgrintra-yellow;
+		padding: 0.7em 0;
+		@include pie-clearfix();
+
+		.logo-vgr {
+			display: block;
+			float: left;
+			position: relative;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.top-bar-tools {
+			display: block;
+			float: right;
+			position: relative;
+
+			a {
+				color: $vgrintra-white;
+			}
+
+		}
+
+	}
+
+	#navBar {
+		border-bottom: 1px solid $vgrintra-mercury;
+
+		padding: 0.9em 0;
+		@include pie-clearfix();
+
+		[class*="span"] {
+			//margin-left: 0;
+			//margin-right: 0;
+		}
+
+		.logo-anslaget {
+			width: 100%;
+		}
+
+
+	}
+
+
+
+}

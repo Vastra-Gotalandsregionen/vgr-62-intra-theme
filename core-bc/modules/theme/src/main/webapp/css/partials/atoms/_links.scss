@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	a {
+		color: $heading-color;
+		text-decoration: none;
+
+		&:visited {
+			color: $heading-color;
+		}
+
+		&:hover {
+			color: $link-hover-color;
+		}
+
+		&:active {
+			color: $link-hover-color;
+		}
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:visited {
+		color: $link-color;
+	}
+
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: underline;
+	}
+
+	&:active {
+		color: $link-hover-color;
+	}
+}
+
+
+
+// Remove underline from all Liferay links
+// --------
+.lfr-meta-actions,
+.lfr-admin-panel,
+.article-form,
+.yui3-widget-bd,
+.lfr-search-container,
+.btn-group,
+.dropdown-menu,
+.nav-tabs {
+	a {
+		text-decoration: none;
+	}
+}

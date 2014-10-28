@@ -1,0 +1,33 @@
+#navigation {
+
+  background: $menu-bar-bg;
+  font-weight: $menu-bar-font-weight;
+
+  margin: 0 0 10px 0;
+
+  @include border-radius();
+
+  > ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+
+    > li {
+
+      display: inline-block;
+
+      margin: 0 10px;
+
+      > a {
+        color: $menu-bar-color;
+        display: inline-block;
+        font-size: 1.1em;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+}

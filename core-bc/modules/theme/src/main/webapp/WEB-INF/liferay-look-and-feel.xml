@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.2.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_2_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>6.2.0+</version>
+	</compatibility>
+	<theme id="vgr-intra-62-theme" name="VGR Intra Theme">
+		<template-extension>ftl</template-extension>
+		<settings>
+			<setting key="portlet-setup-show-borders-default" value="false" configurable="true" type="checkbox" />
+			<setting key="show-breadcrumbs" value="true" configurable="true" type="checkbox"></setting>
+		</settings>
+
+	</theme>
+</look-and-feel>

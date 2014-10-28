@@ -1,0 +1,21 @@
+// User image blows up in mobile view
+.dockbar {
+
+	.nav {
+
+		> li.dockbar-user-notifications {
+			a {
+				padding-top: 3px;
+				padding-bottom: 3px;
+			}
+		}
+	}
+
+	.user-avatar-image {
+		display: none;
+
+		@include medium {
+			display: inherit;
+		}
+	}
+}

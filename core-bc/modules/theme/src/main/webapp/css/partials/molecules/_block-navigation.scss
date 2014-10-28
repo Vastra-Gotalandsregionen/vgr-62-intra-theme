@@ -1,0 +1,72 @@
+// Colors
+$block-navigation-bg: $vgrintra-white;
+$block-navigation-text-color: $vgrintra-mineshaft;
+$block-navigation-border-color: $vgrintra-mineshaft;
+
+// Sizes
+$block-navigation-item-height: 200px;
+
+.block-navigation {
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+
+      a {
+        color: $block-navigation-text-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $block-navigation-text-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // First Level
+  ul.level-1 {
+
+    @include pie-clearfix();
+
+    > li {
+      @include box-sizing(border-box);
+
+      float: left;
+      margin-right: 2.5641%;
+      width: 31.62393%;
+
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+
+      .level-1-content {
+        background: $block-navigation-bg;
+        min-height: $block-navigation-item-height;
+        padding: 10px;
+        margin: 10px 0;
+
+        // Heading
+        > a {
+          border-bottom: 1px solid $block-navigation-border-color;
+          display: block;
+          margin: 0 0 0.2em 0;
+          padding: 0 0 0.2em 0;
+          text-transform: uppercase;
+        }
+
+      }
+
+    }
+  }
+
+  // Second Level
+  ul.level-2 {}
+
+
+
+}

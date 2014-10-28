@@ -1,0 +1,115 @@
+@import '../../aui_variables';
+
+
+// Breakpoints
+// -------------------------
+$bp-xsmall : 600px;
+$bp-small : 800px;
+$bp-medium : 1000px;
+$bp-large : 1199px;
+
+
+// Colors - contansts
+// -------------------------
+// http://chir.ag/projects/name-that-color/
+
+$vgrintra-yellow: #f1a81a;
+$vgrintra-blue: #065293;
+$vgrintra-red: #9a002c;
+$vgrintra-green: #55772f;
+
+
+$vgrintra-wildsand: #f6f6f6;
+$vgrintra-mercury: #e6e6e6;
+$vgrintra-graydusty:		#999;
+$vgrintra-boulder:		#777;
+$vgrintra-graydove:		#666;
+$vgrintra-mineshaft:		#222;
+$vgrintra-graycod:		#111;
+
+
+
+$vgrintra-black: 		#000;
+$vgrintra-white: #fff;
+
+
+
+
+$vgrintra-yellowlight: #fde8c8;
+$vgrintra-appricot: #fad396;
+
+
+$vgrintra-graydark:		#4a4a4a;
+
+$vgrintra-graylight:		#ececec;
+
+
+/*
+f6f6f6
+*/
+
+
+// Colors
+// -------------------------
+$bg:					$vgrintra-wildsand;
+$text-color:			$textColor; //From _aui_variables
+
+$content-bg:  $vgrintra-yellowlight;
+
+
+$heading-color:			$vgrintra-mineshaft;
+$heading-h1-color:		$vgrintra-mineshaft;
+$link-color:			$linkColor; //From _aui_variables
+$link-hover-color:		$linkColorHover; //From _aui_variables
+
+$menu-bar-bg:				$vgrintra-white;
+$menu-bar-color:			$vgrintra-mineshaft;
+
+// Fonts
+// -------------------------
+$base-font-size: 	$baseFontSize; //From _aui_variables
+$base-line-height:	$baseLineHeight; //From _aui_variables
+$base-font-weight:	400;
+
+// Selector, Size, Font Weight, Letter Spacing
+$font-list: (
+  h1	32px 	400	normal	$heading-h1-color,
+  h2	26px	400	normal	$heading-color,
+  h3	22px  	400	normal	$heading-color,
+  h4	20px	400	normal	$heading-color,
+  h5	20px  	400	normal	$heading-color,
+  h6	20px 	400	normal	$heading-color
+);
+
+$font-weight-normal: 		normal;
+$font-weight-bold:			bold;
+$font-weight-light: 		200;
+$font-weight-ultralight: 	100;
+
+$menu-bar-font-weight: normal;
+
+
+// Padding and sizes
+// -------------------------
+
+// Container
+$container-width-small: 760px;
+$container-width-medium: 980px;
+$container-width-large: 1190px;
+
+$portlet-padding: 			0 10px;
+
+$default-border-radius:		2px; //Compass named default variable.
+
+// Shadow
+// --------
+$default-box-shadow-color: $vgrintra-graydusty; // The default color for box shadows
+$default-box-shadow-h-offset: 0px; // The default horizontal offset. Positive is to the right.
+$default-box-shadow-v-offset: 0px; // The default vertical offset. Positive is down.
+$default-box-shadow-blur: 5px; // The default blur length.
+$default-box-shadow-spread: false; // The default spread length.
+$default-box-shadow-inset: false; // The default shadow inset: inset or false (for standard shadow).
+
+// Other
+// -------------------------
+$grid-background-baseline-color: rgba(255, 0, 0, 0.5); //DEBUG

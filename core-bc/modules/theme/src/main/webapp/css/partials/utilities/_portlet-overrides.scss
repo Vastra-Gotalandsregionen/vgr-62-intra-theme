@@ -1,0 +1,117 @@
+// This file contains styling which overrides the standard Liferay portlets
+// Things like styling the search engine results page, the blog etc.
+// --------
+
+
+// All portlets
+.portlet {
+
+	background: $vgrintra-white;
+
+	padding: 10px;
+
+	.portlet-topper {
+		.portlet-title {
+
+			color: $vgrintra-yellow;
+
+			font-size: 1.325em;
+
+			img {
+				display: none;
+			}
+		}
+	}
+
+	.portlet-content {
+
+		padding: 0;
+
+		.portlet-body {
+			padding: 15px
+		}
+	}
+
+
+}
+
+.portlet-navigation {
+
+	.nav-menu {
+		ul {
+
+			list-style: none;
+			margin: 10px;
+			padding: 0;
+
+			li {
+
+				margin: 10px 0;
+
+				a {
+					color: $vgrintra-mineshaft;
+				}
+			}
+
+			&.level-1 {
+
+
+				li {
+					a {
+						font-size: 1.1em;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+
+		}
+	}
+
+}
+
+.portlet-borderless-container {
+  min-height: 0;
+}
+
+.portlet-journal-content,
+.portlet-asset-publisher {
+
+	.portlet-content {
+		.portlet-body {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+}
+
+.portlet-asset-publisher {
+	.taglib-header {
+		display: none;
+	}
+
+	.asset-full-content {
+
+		.asset-content {
+			margin: 0;
+		}
+	}
+
+	.portlet-body {
+
+		.asset-user-actions {
+			@include clearfix();
+
+			margin-bottom: 3px;
+
+			div:first-child {
+				margin-left: 0;
+			}
+
+			div:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
