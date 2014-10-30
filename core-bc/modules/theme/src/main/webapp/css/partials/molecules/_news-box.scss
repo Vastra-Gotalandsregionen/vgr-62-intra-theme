@@ -1,0 +1,31 @@
+.news-box {
+
+  .news-items {
+    @include pie-clearfix();
+
+    .news-item {
+      //border: 1px solid $vgrintra-alto;
+
+      float: left;
+      width: 50%;
+
+      @include box-sizing(border-box);
+
+      .news-item-inner {
+        height: 100px;
+        overflow: hidden;
+        padding: 0.5em;
+      }
+
+      .news-item-date {}
+
+      .news-item-heading {}
+
+      .news-item-summary {}
+
+
+    }
+
+  }
+
+}

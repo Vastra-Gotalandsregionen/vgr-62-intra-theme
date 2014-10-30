@@ -25,43 +25,23 @@
 
 // Hides the portlet titles
 // --------
+
 .aui {
-	/*.portlet-title {
+	.portlet-title {
 		display: none;
 	}
+}
 
-	header.portlet-topper,
-	.portlet-topper {
-		display: none;
-	}
-
-	.signed-in.page-edit.controls-visible .portlet-topper {
-		display: block !important;
-
+.page-edit {
+	&.controls-visible {
 		.portlet-title {
-			display: block !important;
-		}
-	}*/
-
-	// If administrator is setting custom css-class '.show-title' on portlet. Make sure it's visible
-	.show-title {
-		.portlet-title {
-			display: block !important;
-		}
-
-		.portlet-topper {
-			display: block !important;
+			display: block;
 		}
 	}
 
-	.portlet-site-map,
-	.portlet-sites-directory {
+	&.controls-hidden {
 		.portlet-title {
-			display: block !important;
-		}
-
-		.portlet-topper {
-			display: block !important;
+			display: none;
 		}
 	}
 }

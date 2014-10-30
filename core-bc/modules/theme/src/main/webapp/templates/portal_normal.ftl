@@ -13,11 +13,9 @@
 	${theme.include(top_head_include)}
 
 	<script src="${javascript_folder}/fixes/modernizr.custom.js"></script>
-
 	<!--[if (gte IE 6)&(lte IE 8)]>
-	  <script type="text/javascript" src="${javascript_folder}/selectivizr.js"></script>
+		<script type="text/javascript" src="${javascript_folder}/selectivizr.js"></script>
 	<![endif]-->
-
 
 </head>
 
@@ -128,8 +126,6 @@ ${theme.include(bottom_include)}
 
 <script type="text/javascript" src="${javascript_folder}/jq/jq.js"></script>
 <script type="text/javascript" src="${javascript_folder}/jq/theme-jq.js"></script>
-
-
 
 </body>
 
