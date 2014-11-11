@@ -37,6 +37,7 @@ body {
     @import 'partials/molecules/main-navigation';
 		@import 'partials/molecules/mobile-navigation';
 		@import 'partials/molecules/news-box';
+		@import 'partials/molecules/news-listing';
 		@import 'partials/molecules/searchbox';
 		@import 'partials/molecules/ui-dialog';
 

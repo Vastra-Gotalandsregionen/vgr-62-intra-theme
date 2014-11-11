@@ -24,12 +24,11 @@
       .news-item-inner {
         background: transparent url(../images/theme/news/icon-news-cat1.png) 0.6em 0.6em no-repeat;
         background-size: 3.4em 3.4em;
+        border: 1px solid $vgrintra-mercury;
+        border-width: 0 1px 1px 0;
         height: 100px;
         overflow: hidden;
         padding: 1.0em 1.0em 1.0em 5.0em;
-
-        border: 1px solid $vgrintra-mercury;
-        border-width: 0 1px 1px 0;
       }
 
       // Every even
