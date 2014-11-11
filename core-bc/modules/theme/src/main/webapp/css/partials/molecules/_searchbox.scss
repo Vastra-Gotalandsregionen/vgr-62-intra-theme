@@ -2,6 +2,9 @@ $sb-search-height: 40px;
 $sb-search-width: 40px;
 
 .sb-search {
+  display: none;
+
+
   float: right;
   height: $sb-search-height;
   margin: 0;

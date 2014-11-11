@@ -1,5 +1,15 @@
 .news-box {
 
+  > h1 {
+    background: $vgrintra-emperor;
+    color: $vgrintra-white;
+    font-size: 1.1em;
+    line-height: 1.0;
+    margin: -10px -10px 10px -10px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
   .news-items {
     @include pie-clearfix();
 
@@ -12,16 +22,56 @@
       @include box-sizing(border-box);
 
       .news-item-inner {
+        background: transparent url(../images/theme/news/icon-news-cat1.png) 0.6em 0.6em no-repeat;
+        background-size: 3.4em 3.4em;
         height: 100px;
         overflow: hidden;
-        padding: 0.5em;
+        padding: 1.0em 1.0em 1.0em 5.0em;
+
+        border: 1px solid $vgrintra-mercury;
+        border-width: 0 1px 1px 0;
       }
 
-      .news-item-date {}
+      // Every even
+      &:nth-child(2n) {
+        .news-item-inner {
+          border-right: none;
+        }
+      }
 
-      .news-item-heading {}
+      // Two last
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        .news-item-inner {
+          border-bottom: none;
+        }
+      }
+
+
+      .news-item-date {
+        color: $vgrintra-graydove;
+      }
+
+      .news-item-heading {
+        color: $vgrintra-yellow;
+        font-weight: bold;
+      }
 
       .news-item-summary {}
+
+      > a {
+        color: $text-color;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+
+          .news-item-inner {
+            background-color: $vgrintra-wildsand;
+          }
+        }
+      }
 
 
     }

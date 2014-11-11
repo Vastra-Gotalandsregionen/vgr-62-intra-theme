@@ -39,28 +39,53 @@
 
 	.nav-menu {
 		ul {
-
 			list-style: none;
-			margin: 10px;
+			margin: 6px;
 			padding: 0;
 
 			li {
 
-				margin: 10px 0;
+				margin: 3px 0;
+				padding: 3px 0;
 
 				a {
 					color: $vgrintra-mineshaft;
+					display: inline-block;
+					line-height: 1.0;
+					position: relative;
+					padding-right: 20px;
+
+					&:hover {
+						background: transparent url(../images/arrows/05_right.png) right center no-repeat;
+						text-decoration: none;
+					}
+
 				}
 			}
 
 			&.level-1 {
 
+				border-top: 1px solid $vgrintra-alto;
 
 				li {
+
+					border-bottom: 1px solid $vgrintra-alto;
+
 					a {
 						font-size: 1.1em;
 						text-transform: uppercase;
 					}
+
+					ul {
+						li {
+							border-bottom: 0;
+							a {
+								font-size: 1.0em;
+								text-transform: none;
+							}
+						}
+					}
+
 				}
 			}
 

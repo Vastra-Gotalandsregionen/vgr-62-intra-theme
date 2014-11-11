@@ -18,13 +18,13 @@ $vgrintra-blue: #065293;
 $vgrintra-red: #9a002c;
 $vgrintra-green: #55772f;
 
-
 $vgrintra-wildsand: #f6f6f6;
 $vgrintra-mercury: #e6e6e6;
 $vgrintra-alto: #dfdfdf;
 $vgrintra-graydusty:		#999;
 $vgrintra-boulder:		#777;
 $vgrintra-graydove:		#666;
+$vgrintra-emperor:		#555;
 $vgrintra-mineshaft:		#222;
 $vgrintra-graycod:		#111;
 
@@ -74,12 +74,12 @@ $base-font-weight:	400;
 
 // Selector, Size, Font Weight, Letter Spacing
 $font-list: (
-  h1	32px 	400	normal	$heading-h1-color,
-  h2	26px	400	normal	$heading-color,
-  h3	22px  	400	normal	$heading-color,
-  h4	20px	400	normal	$heading-color,
-  h5	20px  	400	normal	$heading-color,
-  h6	20px 	400	normal	$heading-color
+  h1	30px 	400	normal	$heading-h1-color,
+  h2	24px	400	normal	$heading-color,
+  h3	20px  	400	normal	$heading-color,
+  h4	18px	400	normal	$heading-color,
+  h5	18px  	400	normal	$heading-color,
+  h6	18px 	400	normal	$heading-color
 );
 
 $font-weight-normal: 		normal;
