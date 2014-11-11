@@ -11,6 +11,8 @@
 
   .content-box-bd {
 
+    position: relative;
+
     .entry-item {
 
       @include pie-clearfix();
