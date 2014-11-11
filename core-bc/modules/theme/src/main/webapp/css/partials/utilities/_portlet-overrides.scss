@@ -8,7 +8,7 @@
 
 	background: $vgrintra-white;
 
-	padding: 10px;
+	padding: 1.0em;
 
 	.portlet-topper {
 		.portlet-title {
@@ -32,9 +32,14 @@
 		}
 	}
 
-
 }
 
+.portlet-borderless-container {
+	min-height: 0;
+}
+
+
+// Navigation Portlet
 .portlet-navigation {
 
 	.nav-menu {
@@ -95,10 +100,8 @@
 
 }
 
-.portlet-borderless-container {
-  min-height: 0;
-}
 
+// Web Content Display and Asset Publisher
 .portlet-journal-content,
 .portlet-asset-publisher {
 
@@ -111,6 +114,7 @@
 
 }
 
+// Asset Publisher
 .portlet-asset-publisher {
 	.taglib-header {
 		display: none;
@@ -139,4 +143,26 @@
 			}
 		}
 	}
+}
+
+// Blogs Portlet
+.portlet-blogs {
+
+	.entry-date {
+		background: none;
+		color: $vgrintra-graydove;
+		padding-left: 0;
+	}
+
+	.entry-footer {
+		@include pie-clearfix();
+	}
+
+	.entry-author {
+		background: none;
+		border-right: 0;
+		color: $vgrintra-graydove;
+		padding-left: 0px;
+	}
+
 }

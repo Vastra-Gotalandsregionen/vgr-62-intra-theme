@@ -1,0 +1,71 @@
+.content-box {
+
+  > h2 {
+    border-bottom: 1px solid $vgrintra-yellow;
+    color: $vgrintra-yellow;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin: 0 0 0.5em 0;
+    padding: 0 0 0.5em 0;
+  }
+
+  .content-box-bd {
+
+    .entry-item {
+
+      @include pie-clearfix();
+
+      padding: 0;
+      margin: 0.7em 0;
+
+      a {
+        color: $text-color;
+        display: block;
+        text-decoration: none;
+
+        @include pie-clearfix();
+
+        &:hover {
+          background: $vgrintra-wildsand;
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+
+      .entry-date {
+        float: left;
+        line-height: 1.0;
+        width: 50px;
+
+        .entry-date-inner {
+          background: $vgrintra-wildsand;
+          color: $vgrintra-buddhagold;
+          font-weight: normal;
+          padding: 10px;
+          text-align: center;
+
+          .entry-date-month {
+            font-size: 0.9em;
+            text-transform: uppercase;
+          }
+
+          .entry-date-day {
+            font-size: 1.1em;
+          }
+
+        }
+
+      }
+
+      .entry-content {
+        margin-left: 60px;
+        padding: 0.3em 0;
+      }
+
+
+
+    }
+
+  }
+
+}
