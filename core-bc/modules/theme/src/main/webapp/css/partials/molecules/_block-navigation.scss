@@ -1,5 +1,7 @@
 // Colors
 $block-navigation-bg: $vgrintra-white;
+$block-navigation-border-hover: $vgrintra-yellow;
+$block-navigation-title-color: $vgrintra-yellow;
 $block-navigation-text-color: $vgrintra-mineshaft;
 $block-navigation-border-color: $vgrintra-mineshaft;
 
@@ -8,64 +10,59 @@ $block-navigation-item-height: 200px;
 
 .block-navigation {
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  @include pie-clearfix();
 
-    li {
+  .block-navigation-item {
+    float: left;
+    width: 33%;
+
+
+    > a {
+      background: $block-navigation-bg;
+      border: 1px solid transparent;
+      color: $block-navigation-text-color;
       display: block;
+      height: 180px;
+      margin-bottom: 1em;
+      margin-right: 1em;
+      overflow: hidden;
+      padding: 1em;
+      @include pie-clearfix();
 
-      a {
-        color: $block-navigation-text-color;
+      &:hover {
+        border-color: $block-navigation-border-hover;
         text-decoration: none;
-
-        &:hover {
-          color: $block-navigation-text-color;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  // First Level
-  ul.level-1 {
-
-    @include pie-clearfix();
-
-    > li {
-      @include box-sizing(border-box);
-
-      float: left;
-      margin-right: 2.5641%;
-      width: 31.62393%;
-
-      &:nth-child(3n+3) {
-        margin-right: 0;
       }
 
-      .level-1-content {
-        background: $block-navigation-bg;
-        min-height: $block-navigation-item-height;
-        padding: 10px;
-        margin: 10px 0;
+      .title {
+        border-bottom: 1px solid $block-navigation-title-color;
+        color: $block-navigation-title-color;
+        font-size: 1.1em;
+        margin: 0 0 0.8em 0;
+        padding: 0 0 0.5em 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
 
-        // Heading
-        > a {
-          border-bottom: 1px solid $block-navigation-border-color;
-          display: block;
-          margin: 0 0 0.2em 0;
-          padding: 0 0 0.2em 0;
-          text-transform: uppercase;
+      .img-wrap {
+        float: left;
+        padding-top: 0.5em;
+        width: 20%;
+
+        img {
+          width: 100%;
         }
+      }
 
+      .description {
+        margin-left: 25%;
       }
 
     }
+
+
   }
 
-  // Second Level
-  ul.level-2 {}
 
 
 

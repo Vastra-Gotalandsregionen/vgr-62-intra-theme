@@ -22,7 +22,7 @@
       @include box-sizing(border-box);
 
       .news-item-inner {
-        background: transparent url(../images/theme/news/icon-news-cat1.png) 0.6em 0.6em no-repeat;
+        background: transparent url(../images/theme/news/allmant-okat.png) 0.3em 50% no-repeat;
         background-size: 3.4em 3.4em;
         border: 1px solid $vgrintra-mercury;
         border-width: 0 1px 1px 0;
@@ -31,10 +31,25 @@
         padding: 1.0em 1.0em 1.0em 5.0em;
       }
 
+      &.news-item-akut .news-item-inner { background-image: url(../images/theme/news/akut.png); }
+      &.news-item-allmant-okat .news-item-inner { background-image: url(../images/theme/news/allmant-okat.png); }
+      &.news-item-ekonomi .news-item-inner { background-image: url(../images/theme/news/ekonomi.png); }
+      &.news-item-folkhalsa .news-item-inner { background-image: url(../images/theme/news/folkhalsa.png); }
+      &.news-item-forskning .news-item-inner { background-image: url(../images/theme/news/forskning.png); }
+      &.news-item-handelser .news-item-inner { background-image: url(../images/theme/news/handelser.png); }
+      &.news-item-it-telefoni .news-item-inner { background-image: url(../images/theme/news/it-telefoni.png); }
+      &.news-item-miljo .news-item-inner { background-image: url(../images/theme/news/miljo.png); }
+      &.news-item-nyans .news-item-inner { background-image: url(../images/theme/news/nyans.png); }
+      &.news-item-patientvard-sakerhet .news-item-inner { background-image: url(../images/theme/news/patientvard-sakerhet.png); }
+      &.news-item-personal .news-item-inner { background-image: url(../images/theme/news/personal.png); }
+      &.news-item-sakerhet-pers-lokal .news-item-inner { background-image: url(../images/theme/news/sakerhet-pers-lokal.png); }
+      &.news-item-utveckling .news-item-inner { background-image: url(../images/theme/news/utveckling.png); }
+      &.news-item-vgr .news-item-inner { background-image: url(../images/theme/news/vgr.png); }
+
       // Every even
       &:nth-child(2n) {
         .news-item-inner {
-          border-right: none;
+          border-right-color: transparent;
         }
       }
 
@@ -42,7 +57,7 @@
       &:nth-last-child(1),
       &:nth-last-child(2) {
         .news-item-inner {
-          border-bottom: none;
+          border-bottom-color: transparent;
         }
       }
 

@@ -7,8 +7,11 @@
 .portlet {
 
 	background: $vgrintra-white;
-
 	padding: 1.0em;
+
+	&.portlet-bg-transp {
+		background: transparent;
+	}
 
 	.portlet-topper {
 		.portlet-title {

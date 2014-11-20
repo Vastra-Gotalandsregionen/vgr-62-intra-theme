@@ -1,7 +1,23 @@
 .staff-week-box {
   .content-box-bd {
-    img {
-      max-width: 100px;
+
+    //line-height: 22px;
+
+    > a {
+      color: $text-color;
+      display: block;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
+
+    img {
+      float: left;
+      margin-right: 0.6em;
+      max-width: 80px;
+    }
+
   }
 }

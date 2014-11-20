@@ -24,8 +24,16 @@
         color: $menu-bar-color;
         display: inline-block;
         font-size: 1.1em;
+        font-weight: normal;
         text-transform: uppercase;
       }
+
+      &.selected {
+        > a {
+          font-weight: bold;
+        }
+      }
+
     }
   }
 
