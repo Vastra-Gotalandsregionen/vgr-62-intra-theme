@@ -24,6 +24,12 @@
 				display: none;
 			}
 		}
+
+		.portlet-topper-toolbar {
+			right: 0;
+			top: -8px;
+		}
+
 	}
 
 	.portlet-content {
@@ -167,5 +173,72 @@
 		color: $vgrintra-graydove;
 		padding-left: 0px;
 	}
+
+}
+
+// Sitemap portlet
+.portlet-site-map {
+
+	.portlet {
+		.portlet-topper {
+			.portlet-title {
+				color: $heading-h1-color;
+				font-size: 1.875em;
+				line-height: 1.73333em;
+			}
+		}
+	}
+
+	.portlet-body {
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0.1em 0;
+				padding: 0.1em 0;
+
+				a {
+					color: $vgrintra-mineshaft;
+					display: block;
+					padding: 0.1em 0.3em;
+					text-decoration: none;
+
+					&:hover {
+						background: $vgrintra-alto;
+						text-decoration: none;
+					}
+				}
+			}
+
+			ul {
+				margin: 0.4em;
+				padding-left: 0.5em;
+			}
+		}
+
+		// First level
+		> ul {
+
+			> li {
+
+				> a {
+					background: $vgrintra-yellow;
+					color: $vgrintra-white;
+					font-size: 1.1em;
+					text-transform: uppercase;
+
+					&:hover {
+						color: $vgrintra-mineshaft;
+					}
+
+				}
+			}
+		}
+
+	}
+
 
 }

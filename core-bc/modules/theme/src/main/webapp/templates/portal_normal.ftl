@@ -41,6 +41,11 @@ ${theme.include(body_top_include)}
 					</a>
 
 					<div class="top-bar-tools">
+
+						<#if topnav_article_id?has_content>
+							<@includeWCD group_id=group_id article_id=topnav_article_id />
+						</#if>
+
 						<#if !is_signed_in>
 							<a href="${sign_in_url}" data-redirect="${is_login_redirect_required?string}" id="sign-in" rel="nofollow">${sign_in_text}</a>
 						<#else>
@@ -56,13 +61,13 @@ ${theme.include(body_top_include)}
 			<div class="container-normal">
 				<div class="row-fluid">
 
-					<div class="span3">
+					<div class="span2">
 						<a class="logo-anslaget" href="/">
 							<img src="${images_folder}/theme/logo/anslaget-logo.png" alt="ANSlaget" />
 						</a>
 					</div>
 
-					<div class="span6">
+					<div class="span8">
 
 						<#if has_navigation || is_signed_in>
 							<#include "${full_templates_path}/navigation.ftl" />
@@ -70,7 +75,7 @@ ${theme.include(body_top_include)}
 
 					</div>
 
-					<div class="span3">
+					<div class="span2">
 
 						<div id="sbSearch" class="sb-search">
 							<form>

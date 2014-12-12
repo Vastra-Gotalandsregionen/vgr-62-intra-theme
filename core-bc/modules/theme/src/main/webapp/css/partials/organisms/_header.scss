@@ -24,9 +24,23 @@
 			float: right;
 			position: relative;
 
+			.portlet-journal-content {
+				display: inline-block;
+			}
+
 			a {
 				color: $vgrintra-white;
+				display: inline-block;
 			}
+
+			ul.navigation-list {
+				li {
+					display: inline-block;
+					margin-right: 10px;
+					a {}
+				}
+			}
+
 
 		}
 

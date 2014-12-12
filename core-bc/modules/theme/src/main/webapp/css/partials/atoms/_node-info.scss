@@ -1,9 +1,7 @@
-body {
-  #content {
-    .container-normal {
-      > alert {
-        display: none;
-      }
+#content {
+  .container-normal {
+    > .alert {
+      display: none;
     }
   }
 }

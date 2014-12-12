@@ -30,21 +30,64 @@
 	.portlet-title {
 		display: none;
 	}
+
+	.portlet-topper {
+		.portlet-topper-toolbar {
+			display: none;
+		}
+	}
+
 }
 
 .page-edit {
+
 	&.controls-visible {
+
+		.portlet-title {
+			display: block;
+		}
+
+		.portlet-topper {
+			.portlet-topper-toolbar {
+				display: block;
+			}
+		}
+
+	}
+
+	&.controls-hidden {
+
+		.portlet-title {
+			display: none;
+		}
+
+		.portlet-topper {
+			.portlet-topper-toolbar {
+				display: none;
+			}
+		}
+
+	}
+
+}
+
+.aui {
+	// Show border class can be set on portlet ("Grafiskt utseende -> Avancerade stilalternativ" to force borders to be shown.)
+	.show-borders {
 		.portlet-title {
 			display: block;
 		}
 	}
 
-	&.controls-hidden {
-		.portlet-title {
-			display: none;
+	.page-edit {
+		&.controls-visible,
+		&.controls-hidden {
+			display: block;
 		}
 	}
+
 }
+
 
 // For some reason, this image does not exist in the _styled theme
 // --------
