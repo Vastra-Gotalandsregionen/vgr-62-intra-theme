@@ -1,0 +1,9 @@
+body {
+  #content {
+    .container-normal {
+      > alert {
+        display: none;
+      }
+    }
+  }
+}

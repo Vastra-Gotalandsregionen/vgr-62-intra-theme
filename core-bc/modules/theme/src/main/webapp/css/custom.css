@@ -1,5 +1,5 @@
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(//fonts.googleapis.com/css?family=Lato);
 
 // Vendor
 // --------
@@ -26,10 +26,12 @@ body {
     @import 'partials/atoms/body';
     @import 'partials/atoms/paragraphs';
     @import 'partials/atoms/headings';
-    @import 'partials/atoms/links';
+		@import 'partials/atoms/inputs';
+		@import 'partials/atoms/images';
+		@import 'partials/atoms/links';
 		@import 'partials/atoms/link-button';
-    @import 'partials/atoms/inputs';
-    @import 'partials/atoms/images';
+		@import 'partials/atoms/alerts';
+		@import 'partials/atoms/node-info';
     @import 'partials/atoms/quotes';
 
 		@import 'partials/molecules/block-navigation';
