@@ -1,21 +1,24 @@
 // User image blows up in mobile view
-.dockbar {
+.dockbar-split {
+	.dockbar {
 
-	.nav {
+		.nav {
 
-		> li.dockbar-user-notifications {
-			a {
-				padding-top: 3px;
-				padding-bottom: 3px;
+			> li.dockbar-user-notifications {
+				a {
+					padding-top: 3px;
+					padding-bottom: 3px;
+				}
 			}
 		}
-	}
 
-	.user-avatar-image {
-		display: none;
+		.user-avatar-image {
+			display: none;
 
-		@include medium {
-			display: inherit;
+			@include medium {
+				display: inherit;
+			}
 		}
+
 	}
 }

@@ -26,6 +26,17 @@
 
 			.portlet-journal-content {
 				display: inline-block;
+
+				// Hide portlet bar
+				.portlet-borderless-bar {
+					display: none;
+				}
+
+				// Hide edit controls
+				.lfr-meta-actions {
+					display: none;
+				}
+
 			}
 
 			a {
@@ -66,4 +77,13 @@
 
 
 
+}
+
+// More space on top when dockbar is displayed.
+.page-edit {
+	#header {
+		#topBar {
+			padding-top: 2.5em;
+		}
+	}
 }
