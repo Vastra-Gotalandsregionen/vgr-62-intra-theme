@@ -1,9 +1,3 @@
-AUI().ready('aui-base', 'user-bookmarks', function(A) {
-
-    /*
-    var userBookmarks = new A.UserBookmarks({
-      container: '#bookmarks'
-    }).render();
-    */
-
+AUI().ready('aui-base', 'vgrintra-theme-main', function(A) {
+  var vgrIntraThemeMain = new A.VgrIntraThemeMain().render();
 });
