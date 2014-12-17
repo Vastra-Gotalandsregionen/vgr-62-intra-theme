@@ -17,6 +17,10 @@
 
 <#assign show_breadcrumbs = true />
 
+<#------ Portlet Ids ----------------------------------------------------------------------------------------------------------------->
+
+<#assign bookmarks_portlet_id = "intrabookmarks_WAR_bookmarksjsfportlet" />
+
 <#------ Expando values ----------------------------------------------------------------------------------------------------------------->
 
 <#assign hero_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-hero-article-id", group_id, "")  />
@@ -84,4 +88,14 @@
 	<#else>
 		&nbsp;
 	</#if>
+</#macro>
+
+<#macro includePortlet portlet_id>
+
+		${freeMarkerPortletPreferences.reset()}
+
+		${freeMarkerPortletPreferences.setValue("portletSetupShowBorders","false")}
+
+		${theme.runtime(portlet_id, "", freeMarkerPortletPreferences)}
+		${freeMarkerPortletPreferences.reset()}
 </#macro>

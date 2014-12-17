@@ -35,6 +35,7 @@ body {
     @import 'partials/atoms/quotes';
 
 		@import 'partials/molecules/block-navigation';
+		@import 'partials/molecules/bookmarks';
 		@import 'partials/molecules/content-box';
 		@import 'partials/molecules/dockbar';
     @import 'partials/molecules/main-navigation';
