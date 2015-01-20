@@ -137,6 +137,11 @@ ${theme.include(bottom_include)}
 <#--
 <script type="text/javascript" src="${javascript_folder}/modules/user-bookmarks.js"></script>
 -->
+
+<#--
+<script type="text/javascript" src="${javascript_folder}/modules/ifeed-parser.js"></script>
+-->
+
 <script type="text/javascript" src="${javascript_folder}/modules/vgrintra-theme-main.js"></script>
 <script type="text/javascript" src="${javascript_folder}/theme-main.js"></script>
 
