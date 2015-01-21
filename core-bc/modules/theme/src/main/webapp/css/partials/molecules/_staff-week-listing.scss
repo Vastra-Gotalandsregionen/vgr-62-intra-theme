@@ -1,5 +1,9 @@
 .staff-week-listing {
 
+  > h2 {
+    margin-top: 0;
+  }
+
   .staff-week-item {
 
     .staff-week-item-inner {
@@ -15,28 +19,11 @@
 
     .staff-week-item-heading {
       color: $vgrintra-yellow;
-      font-size: 1.1em;
+      font-size: 1.0em;
       font-weight: bold;
     }
 
-    .staff-week-item-content {
-
-      @include pie-clearfix();
-
-      .staff-week-item-image {
-        float: left;
-        width: 20%;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      .staffweek-item-summary {
-        float: right;
-        width: 77%;
-      }
-
+    .staff-week-item-summary {
     }
 
     > a {

@@ -1,5 +1,9 @@
 .news-listing {
 
+  > h2 {
+    margin-top: 0;
+  }
+  
   .news-item {
 
     .news-item-inner {
