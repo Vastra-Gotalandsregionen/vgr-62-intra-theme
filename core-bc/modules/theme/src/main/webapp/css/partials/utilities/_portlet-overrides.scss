@@ -58,6 +58,12 @@
 .portlet-navigation {
 
 	.nav-menu {
+
+		> h2 {
+			line-height: 1.73333em;
+			margin: 0;
+		}
+
 		ul {
 			list-style: none;
 			margin: 6px;
