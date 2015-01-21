@@ -5,8 +5,6 @@
     .staff-week-item-inner {
       border-top: 1px solid $vgrintra-mercury;
       padding: 1.0em 0.5em;
-
-      @include pie-clearfix();
     }
 
     &:last-child {
@@ -15,27 +13,31 @@
       }
     }
 
-    .staff-week-item-image {
-      float: left;
-      width: 20%;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .staff-week-item-content {
-      float: right;
-      width: 77%;
-    }
-
     .staff-week-item-heading {
       color: $vgrintra-yellow;
       font-size: 1.1em;
       font-weight: bold;
     }
 
-    .staffweek-item-summary {}
+    .staff-week-item-content {
+
+      @include pie-clearfix();
+
+      .staff-week-item-image {
+        float: left;
+        width: 20%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .staffweek-item-summary {
+        float: right;
+        width: 77%;
+      }
+
+    }
 
     > a {
       color: $text-color;
