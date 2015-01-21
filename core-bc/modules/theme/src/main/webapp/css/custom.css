@@ -37,6 +37,7 @@ body {
 		@import 'partials/molecules/block-navigation';
 		@import 'partials/molecules/bookmarks';
 		@import 'partials/molecules/content-box';
+		@import 'partials/molecules/contacts-listing';
 		@import 'partials/molecules/dockbar';
     @import 'partials/molecules/main-navigation';
 		@import 'partials/molecules/mobile-navigation';
