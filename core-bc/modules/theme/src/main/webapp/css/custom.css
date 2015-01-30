@@ -39,6 +39,7 @@ body {
 		@import 'partials/molecules/content-box';
 		@import 'partials/molecules/contacts-listing';
 		@import 'partials/molecules/dockbar';
+		@import 'partials/molecules/ifeed-parsed';
 		@import 'partials/molecules/intra-panel';
     @import 'partials/molecules/main-navigation';
 		@import 'partials/molecules/mobile-navigation';
