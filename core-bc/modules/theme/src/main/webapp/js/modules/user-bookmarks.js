@@ -11,6 +11,9 @@ AUI().add('user-bookmarks',function(A) {
   CSS_HIDDEN = 'hide'
   ;
 
+  var TPL_BOOKMARKS_TRIGGER = '<div class="bookmarks-trigger">{title}</div>';
+  var TPL_BOOKMARKS_WRAP = '<div class="bookmarks-wrap"><h3>{title}</h3><div class="boomarks-view"></div><div class="boomarks-edit"></div></div>';
+
   var UserBookmarks = A.Component.create(
     {
       ATTRS: {
@@ -31,6 +34,7 @@ AUI().add('user-bookmarks',function(A) {
       prototype: {
 
         bookmarks: null,
+        bookmarksWrap: null,
 
         initializer: function(config) {
           var instance = this;
@@ -69,25 +73,34 @@ AUI().add('user-bookmarks',function(A) {
 
             var container = instance.get(CONTAINER);
 
-            container.append('<div class="bookmarks-trigger">Favoriter</div>');
-            container.append('<div class="bookmarks-wrap">Favoritlista</div>');
+            var bookmarksTriggerHtml = A.substitute(TPL_BOOKMARKS_TRIGGER, {
+              title: 'Favoriter'
+            });
+
+            var bookmarksWrapHtml = A.substitute(TPL_BOOKMARKS_WRAP, {
+              title: 'Favoritlista'
+            });
+
+            container.append(bookmarksTriggerHtml);
+            container.append(bookmarksWrapHtml);
 
             var trigger = container.one('.bookmarks-trigger');
-            var bookmarksWrap = container.one('.bookmarkers-wrap');
+            var bookmarksWrap = container.one('.bookmarks-wrap');
+
+            instance.bookmarksWrap = bookmarksWrap;
 
             trigger.on('click', instance._onTriggerClick, instance);
 
-            A.one('body').delegate('click', instance._onBodyClick, instance);
+            //A.one('body').delegate('click', instance._onBodyClick, instance);
 
             instance._getBookmarks(function(bookmarks) {
 
-              console.log(bookmarks);
+              var bookmarksWrap = instance.bookmarksWrap;
+              var bookmarksView = bookmarksWrap.one('.boomarks-view');
 
               A.each(bookmarks, function(item, index, collection) {
 
-                //item.url
-                //item.name
-
+                bookmarksView.append('<div><a href="' + item.url + '" target="_BLANK">' + item.name + '</a></div>');
 
                 instance.get(CONTAINER).addClass('bookmarks-ready');
 
@@ -149,3 +162,10 @@ AUI().add('user-bookmarks',function(A) {
   ]
 }
 );
+
+
+AUI().ready('user-bookmarks', function(A) {
+  var userBookmarks = new A.UserBookmarks({
+    container: '#bookmarks'
+  }).render();
+});
