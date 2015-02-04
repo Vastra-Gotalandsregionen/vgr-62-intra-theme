@@ -35,7 +35,6 @@
 		<#assign show_breadcrumbs = false />
 	</#if>
 
-
 <#------ Permissions Checker ----------------------------------------------------------------------------------------------------------------->
 
 <#assign permission_checker = theme_display.getPermissionChecker() />

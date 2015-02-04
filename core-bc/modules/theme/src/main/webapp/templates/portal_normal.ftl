@@ -88,6 +88,14 @@ ${theme.include(body_top_include)}
 						<div id="bookmarks">
 						</div>
 
+						<#--
+						<a href="/kris-och-katastrof" class="panic-btn">
+							<span>
+								<@liferay_ui.message key="Kris och Katastrof" />
+							</span>
+						</a>
+						-->
+
 					</div>
 
 
@@ -100,9 +108,12 @@ ${theme.include(body_top_include)}
 
 	<div id="content">
 		<div class="container-normal">
-			<#--
-				<nav id="breadcrumbs"><@liferay.breadcrumbs /></nav>
-			-->
+
+			<#if show_breadcrumbs>
+				<nav id="breadcrumbs">
+					<@liferay_ui.breadcrumb showGuestGroup=false showCurrentGroup=false showLayout=true showCurrentPortlet=true showPortletBreadcrumb=true />
+				</nav>
+			</#if>
 
 			<#if selectable>
 				${theme.include(content_include)}

@@ -24,9 +24,6 @@ body {
 	}
 }
 
-
-
-
 .row {
 
 	[class^="span"],
@@ -37,4 +34,28 @@ body {
 	}
 
 
+}
+
+.columns-intra-25-50-25 {
+	.span6 {
+		.portlet-column-content {
+			background: $vgrintra-white;
+
+			.portlet-boundary {
+				margin-bottom: 0;
+
+				.portlet {
+					padding-bottom: 0;
+				}
+
+				&:last-child {
+					.portlet {
+						padding-bottom: 1em;
+					}
+				}
+
+			}
+
+		}
+	}
 }

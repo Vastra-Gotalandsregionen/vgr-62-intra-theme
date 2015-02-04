@@ -36,6 +36,7 @@ body {
 
 		@import 'partials/molecules/block-navigation';
 		@import 'partials/molecules/bookmarks';
+		@import 'partials/molecules/breadcrumbs';
 		@import 'partials/molecules/content-box';
 		@import 'partials/molecules/contacts-listing';
 		@import 'partials/molecules/dockbar';
@@ -47,6 +48,7 @@ body {
 		@import 'partials/molecules/navigation-list';
 		@import 'partials/molecules/news-box';
 		@import 'partials/molecules/news-listing';
+		@import 'partials/molecules/panic-btn';
 		@import 'partials/molecules/searchbox';
 		@import 'partials/molecules/staff-week';
 		@import 'partials/molecules/staff-week-box';
