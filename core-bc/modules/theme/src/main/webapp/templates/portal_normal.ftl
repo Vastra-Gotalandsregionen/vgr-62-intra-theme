@@ -88,13 +88,12 @@ ${theme.include(body_top_include)}
 						<div id="bookmarks">
 						</div>
 
-						<#--
 						<a href="/kris-och-katastrof" class="panic-btn">
 							<span>
-								<@liferay_ui.message key="Kris och Katastrof" />
+								<@liferay_ui.message key="Vid Kris" />
 							</span>
 						</a>
-						-->
+
 
 					</div>
 
