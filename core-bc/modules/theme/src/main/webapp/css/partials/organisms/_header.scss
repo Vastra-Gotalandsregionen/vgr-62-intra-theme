@@ -42,6 +42,11 @@
 			a {
 				color: $vgrintra-white;
 				display: inline-block;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 
 			ul.navigation-list {

@@ -7,8 +7,17 @@
       line-height: 1.0;
 
       a,
-      span {
+      span,
+      .divider {
         line-height: 1.0;
+      }
+
+      a {
+        color: $vgrintra-graydove;
+      }
+
+      .divider {
+        color: $vgrintra-graydove;
       }
 
     }

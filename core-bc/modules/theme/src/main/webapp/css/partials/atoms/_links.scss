@@ -24,7 +24,7 @@ h6 {
 
 a {
 	color: $link-color;
-	text-decoration: none;
+	text-decoration: underline;
 
 	&:visited {
 		color: $link-color;
@@ -54,5 +54,33 @@ a {
 .nav-tabs {
 	a {
 		text-decoration: none;
+	}
+}
+
+/*
+
+*/
+
+.portlet-journal-content {
+	.portlet-content {
+
+		/*
+		a {
+			color: $vgrintra-mineshaft;
+			border-bottom: 1px dotted $vgrintra-mineshaft;
+			display: inline-block;
+			line-height: 1.0;
+			text-decoration: none;
+
+
+			&:hover {
+				color: $vgrintra-black;
+				border-bottom-style: solid;
+				text-decoration: none;
+			}
+
+		}
+		*/
+
 	}
 }

@@ -42,18 +42,23 @@
 
     }
 
+    /*
     a {
-      line-height: 1.0;
-
       color: $vgrintra-mineshaft;
-      @include underline($vgrintra-white, $vgrintra-silverchalice, true, 1, 2, false);
+      border-bottom: 1px dotted $vgrintra-mineshaft;
+      display: inline-block;
+      line-height: 1.0;
+      text-decoration: none;
+
 
       &:hover {
-        color: $vgrintra-mineshaft;
-        @include underline($vgrintra-white, $vgrintra-graycod, true, 1, 2, false);
+        color: $vgrintra-black;
+        border-bottom-style: solid;
+        text-decoration: none;
       }
 
     }
+    */
 
 
   }
