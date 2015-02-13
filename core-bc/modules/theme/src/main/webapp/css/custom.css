@@ -49,6 +49,7 @@ body {
 		@import 'partials/molecules/news-box';
 		@import 'partials/molecules/news-listing';
 		@import 'partials/molecules/panic-btn';
+		@import 'partials/molecules/puff-box';
 		@import 'partials/molecules/searchbox';
 		@import 'partials/molecules/staff-week';
 		@import 'partials/molecules/staff-week-box';

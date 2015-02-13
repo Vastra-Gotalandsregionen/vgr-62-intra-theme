@@ -39,6 +39,13 @@
 
 }
 
+.portlet {
+	&.no-portlet-content {
+		padding: 0;
+	}
+}
+
+
 .page-edit {
 
 	&.controls-visible {
