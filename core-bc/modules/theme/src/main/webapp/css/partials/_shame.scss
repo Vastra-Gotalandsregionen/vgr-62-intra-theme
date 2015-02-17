@@ -39,9 +39,13 @@
 
 }
 
-.portlet {
-	&.no-portlet-content {
-		padding: 0;
+.aui {
+	.no-portlet-content {
+		margin-bottom: 0;
+
+		.portlet {
+			padding: 0;
+		}
 	}
 }
 

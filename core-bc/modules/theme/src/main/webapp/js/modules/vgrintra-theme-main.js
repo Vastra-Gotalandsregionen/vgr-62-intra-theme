@@ -25,7 +25,6 @@ AUI().add('vgrintra-theme-main',function(A) {
         renderUI: function() {
           var instance = this;
 
-          instance._alignPuffHeight();
           instance._fixBookmarksPortlet();
         },
 
@@ -33,37 +32,12 @@ AUI().add('vgrintra-theme-main',function(A) {
           var instance = this;
         },
 
-        _alignPuffHeight: function() {
-          var instance = this;
-
-          var puffNodes = A.all('.columns-2-4-a .span3 .content-box');
-
-          var largestHeight = 0;
-
-          // Find largest height
-          puffNodes.each(function(item, index, list) {
-            var computedHeightStr = item.getComputedStyle("height");
-
-            try {
-              var computedHeight = parseInt(computedHeightStr);
-              if(computedHeight > largestHeight) {
-                largestHeight = computedHeight;
-              }
-            } catch (e) {}
-          });
-
-          // Set height on each puff to largest height
-          puffNodes.each(function(item, index, list) {
-            item.setStyle('min-height', largestHeight + 'px');
-          });
-        },
-
         _fixBookmarksPortlet: function() {
           var instance = this;
 
           // If signed out
           if(!themeDisplay.isSignedIn()) {
-            var bookmarksPortlet = A.one('#portlet_intrabookmarks_WAR_bookmarksjsfportlet');
+            var bookmarksPortlet = A.one('#p_p_id_intrabookmarks_WAR_bookmarksjsfportlet_');
 
             if(bookmarksPortlet) {
               bookmarksPortlet.addClass('no-portlet-content');
