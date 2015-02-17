@@ -13,7 +13,9 @@
   text-decoration: none;
   text-transform: uppercase;
 
-
+  &:visited {
+    color: $vgrintra-red;
+  }
 
   &:hover {
     color: $vgrintra-red;

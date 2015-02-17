@@ -26,6 +26,7 @@ AUI().add('vgrintra-theme-main',function(A) {
           var instance = this;
 
           instance._alignPuffHeight();
+          instance._fixBookmarksPortlet();
         },
 
         bindUI: function() {
@@ -55,6 +56,20 @@ AUI().add('vgrintra-theme-main',function(A) {
           puffNodes.each(function(item, index, list) {
             item.setStyle('min-height', largestHeight + 'px');
           });
+        },
+
+        _fixBookmarksPortlet: function() {
+          var instance = this;
+
+          // If signed out
+          if(!themeDisplay.isSignedIn()) {
+            var bookmarksPortlet = A.one('#portlet_intrabookmarks_WAR_bookmarksjsfportlet');
+
+            if(bookmarksPortlet) {
+              bookmarksPortlet.addClass('no-portlet-content');
+            }
+          }
+
         },
 
         _someFunction: function() {
