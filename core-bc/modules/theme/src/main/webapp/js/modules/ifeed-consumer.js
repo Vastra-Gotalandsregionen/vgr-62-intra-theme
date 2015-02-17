@@ -148,6 +148,7 @@ AUI().add('ifeed-consumer',function(A) {
             }
 
             var toggler = new A.Toggler({
+              animated: true,
               container: feedContainer,
               content: feedContentNode,
               expanded: expanded,

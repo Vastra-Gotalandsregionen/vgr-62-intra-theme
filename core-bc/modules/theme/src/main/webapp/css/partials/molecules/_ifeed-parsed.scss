@@ -2,6 +2,13 @@
 
   .ifeed-parsed-container {
 
+    margin-bottom: 0.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+
     .ifeed-parsed-content {
 
       &.loading {
@@ -18,6 +25,7 @@
 
       > h3 {
         cursor: pointer;
+        font-size: 1.0em;
         margin: 0;
         padding: 8px 10px;
 
