@@ -33,6 +33,14 @@ ${theme.include(body_top_include)}
 
 	<header id="header" role="banner">
 
+		<#if top_alert_article_id?has_content>
+			<div id="topAlert">
+				<div class="container-normal">
+					<@includeWCD group_id=group_id article_id=top_alert_article_id />
+				</div>
+			</div>
+		</#if>
+
 		<div id="topBar">
 				<div class="container-normal">
 

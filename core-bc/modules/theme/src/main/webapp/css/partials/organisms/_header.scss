@@ -24,6 +24,10 @@
 			float: right;
 			position: relative;
 
+			.portlet-boundary {
+				margin-bottom: 0;
+			}
+
 			.portlet-journal-content {
 				display: inline-block;
 
@@ -87,8 +91,19 @@
 // More space on top when dockbar is displayed.
 .page-edit {
 	#header {
+
+		#topAlert {
+			padding-top: 2.5em;
+		}
+
+
 		#topBar {
 			padding-top: 2.5em;
 		}
+
+		#topAlert + #topBar {
+			padding-top: 0.7em;
+		}
+
 	}
 }

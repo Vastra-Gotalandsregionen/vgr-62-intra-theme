@@ -27,6 +27,8 @@
 
 <#assign topnav_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-topnav-article-id", group_id, "")  />
 
+<#assign top_alert_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-top-alert-article-id", group_id, "")  />
+
 <#------ Theme Settings ----------------------------------------------------------------------------------------------------------------->
 
 <#--
