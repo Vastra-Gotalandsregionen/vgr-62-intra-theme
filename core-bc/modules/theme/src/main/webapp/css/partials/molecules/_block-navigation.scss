@@ -16,7 +16,6 @@ $block-navigation-item-height: 200px;
     float: left;
     width: 33%;
 
-
     > a {
       background: $block-navigation-bg;
       border: 1px solid transparent;
@@ -29,6 +28,7 @@ $block-navigation-item-height: 200px;
       padding: 1em;
       text-decoration: none;
       @include pie-clearfix();
+      @include word-break(normal);
 
       &:hover {
         border-color: $block-navigation-border-hover;

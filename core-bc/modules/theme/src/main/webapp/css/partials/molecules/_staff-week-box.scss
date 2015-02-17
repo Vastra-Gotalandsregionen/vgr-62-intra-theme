@@ -11,13 +11,18 @@
       &:hover {
         text-decoration: none;
       }
+
+      > img {
+        display: block;
+        float: none;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+
+      }
+
     }
 
-    img {
-      float: left;
-      margin-right: 0.6em;
-      max-width: 80px;
-    }
 
   }
 }
