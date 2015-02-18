@@ -46,6 +46,11 @@
 
 <#assign is_omni_admin = permission_checker.isOmniadmin() />
 
+<#------ Favorites ----------------------------------------------------------------------------------------------------------------->
+
+<#assign use_favorites_quickadd = false />
+<#assign favorites_quickadd_portlet_id = "favoritesquickadd_WAR_oppnaprogramfavoritesportlet" />
+
 
 <#------ Page Edit Mode ----------------------------------------------------------------------------------------------------------------->
 <#------ Whether or not portlet titles and other UI components should be displayed. Also used to show/hide dockbar.  ------>

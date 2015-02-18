@@ -102,6 +102,12 @@ ${theme.include(body_top_include)}
 							</span>
 						</a>
 
+						<#if use_favorites_quickadd >
+							<div id="favorites">
+								<@includePortlet portlet_id=favorites_quickadd_portlet_id />
+							</div>
+						</#if>
+
 
 					</div>
 

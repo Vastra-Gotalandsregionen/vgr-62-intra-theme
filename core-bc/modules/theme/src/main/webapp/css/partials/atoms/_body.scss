@@ -22,3 +22,10 @@ body {
 	}
 
 }
+
+&.ie {
+	body {
+		@include word-break(keep-all);
+		
+	}
+}

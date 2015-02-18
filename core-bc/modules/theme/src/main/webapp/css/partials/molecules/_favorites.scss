@@ -1,0 +1,45 @@
+#favorites {
+
+  float: right;
+  margin: 0 20px;
+  position: relative;
+
+  .portlet-boundary {
+     margin-bottom: 0;
+  }
+
+  .favorites-quickadd {
+
+    .favorite-link {
+
+      background: transparent;
+
+      display: block;
+      float: right;
+      font-size: 32px;
+      margin: 5px 0 0 0;
+      position: relative;
+      text-decoration: none;
+
+      //height: 28px;
+      //width: 28px;
+
+      .link-label {
+        font-size: 0;
+        text-indent: -9999em;
+      }
+
+      &.favorite-link-add {
+        color: $vgrintra-yellow;
+      }
+
+      &.favorite-link-remove {
+        color: $vgrintra-yellow;
+      }
+
+
+    }
+
+
+  }
+}
