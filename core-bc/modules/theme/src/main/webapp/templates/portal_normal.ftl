@@ -148,14 +148,7 @@ ${theme.include(bottom_include)}
 <script type="text/javascript" src="${javascript_folder}/pojs/uisearch.js"></script>
 <script type="text/javascript" src="${javascript_folder}/pojs/pojs.js"></script>
 
-<script type="text/javascript" src="${javascript_folder}/jq/jq.js"></script>
-<script type="text/javascript" src="${javascript_folder}/jq/theme-jq.js"></script>
-
 <script type="text/javascript" src="${javascript_folder}/modules/ifeed-consumer.js"></script>
-
-<#--
-<script type="text/javascript" src="${javascript_folder}/modules/user-bookmarks.js"></script>
--->
 
 <script type="text/javascript" src="${javascript_folder}/modules/vgrintra-theme-main.js"></script>
 <script type="text/javascript" src="${javascript_folder}/theme-main.js"></script>
