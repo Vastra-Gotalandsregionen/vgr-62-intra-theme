@@ -69,13 +69,13 @@ ${theme.include(body_top_include)}
 			<div class="container-normal">
 				<div class="row-fluid">
 
-					<div class="span2">
+					<div class="span3">
 						<a class="logo-anslaget" href="/">
 							<img src="${images_folder}/theme/logo/anslaget-logo.png" alt="ANSlaget" />
 						</a>
 					</div>
 
-					<div class="span8">
+					<div class="span6">
 
 						<#if has_navigation || is_signed_in>
 							<#include "${full_templates_path}/navigation.ftl" />
@@ -83,31 +83,24 @@ ${theme.include(body_top_include)}
 
 					</div>
 
-					<div class="span2">
+					<div class="span3">
 
-						<div id="sbSearch" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="S&ouml;k..." type="text" value="" name="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search icon-search"></span>
-							</form>
-						</div>
-
-						<div id="bookmarks">
-						</div>
-
-						<a href="/kris-och-katastrof" class="panic-btn">
-							<span>
-								<@liferay_ui.message key="Vid Kris" />
-							</span>
-						</a>
-
-						<#if use_favorites_quickadd >
-							<div id="favorites">
-								<@includePortlet portlet_id=favorites_quickadd_portlet_id />
+						<div class="navbar-tools">
+							<div class="navbar-tools-item">
+								<a href="/kris-och-katastrof" class="panic-btn">
+									<span>
+										<@liferay_ui.message key="Vid Kris" />
+									</span>
+								</a>
 							</div>
-						</#if>
-
+							<#if use_favorites_quickadd >
+								<div class="navbar-tools-item">
+									<div id="favorites">
+										<@includePortlet portlet_id=favorites_quickadd_portlet_id />
+									</div>
+								</div>
+							</#if>
+						</div>
 
 					</div>
 

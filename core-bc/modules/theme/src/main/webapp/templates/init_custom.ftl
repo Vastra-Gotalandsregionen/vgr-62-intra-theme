@@ -49,6 +49,8 @@
 <#------ Favorites ----------------------------------------------------------------------------------------------------------------->
 
 <#assign use_favorites_quickadd = false />
+<#assign use_favorites_quickadd = true />
+
 <#assign favorites_quickadd_portlet_id = "favoritesquickadd_WAR_oppnaprogramfavoritesportlet" />
 
 
