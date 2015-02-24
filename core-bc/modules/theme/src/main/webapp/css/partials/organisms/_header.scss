@@ -72,6 +72,28 @@
 		padding: 0.9em 0;
 		@include pie-clearfix();
 
+		.row-fluid {
+			position: relative;
+		}
+
+		.logo-wrap {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 20%;
+		}
+
+		.tools-wrap {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 20%;
+		}
+
+		.navigation-wrap {
+			margin: 0 20%;
+		}
+
 		[class*="span"] {
 			//margin-left: 0;
 			//margin-right: 0;
