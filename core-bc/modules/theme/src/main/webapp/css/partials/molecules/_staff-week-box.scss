@@ -8,21 +8,32 @@
       display: block;
       text-decoration: none;
 
-      &:hover {
-        text-decoration: none;
+      .fake-link {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
 
-      > img {
-        display: block;
-        float: none;
-        margin: 0;
-        max-width: 100%;
-        width: 100%;
+      &:hover {
+        text-decoration: none;
 
+      }
+
+      .img-wrap {
+
+        img {
+          display: block;
+          float: none;
+          margin: 0 auto;
+          max-width: 80%;
+          width: 80%;
+          text-align: center;
+        }
       }
 
     }
-
 
   }
 }

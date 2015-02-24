@@ -1,5 +1,7 @@
 .news-box {
 
+  position: relative;
+
   > h1 {
     background: $vgrintra-emperor;
     color: $vgrintra-white;
@@ -89,6 +91,12 @@
 
     }
 
+  }
+
+  .more-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
 }
