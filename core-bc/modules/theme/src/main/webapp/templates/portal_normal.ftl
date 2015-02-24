@@ -93,13 +93,16 @@ ${theme.include(body_top_include)}
 									</span>
 								</a>
 							</div>
-							<#if use_favorites_quickadd >
-								<div class="navbar-tools-item">
-									<div id="favorites">
-										<@includePortlet portlet_id=favorites_quickadd_portlet_id />
+							<#--
+							-->
+								<#if use_favorites_quickadd >
+									<div class="navbar-tools-item">
+										<div id="favorites">
+											<@includePortlet portlet_id=favorites_quickadd_portlet_id />
+										</div>
 									</div>
-								</div>
-							</#if>
+								</#if>
+
 						</div>
 
 					</div>
@@ -111,6 +114,16 @@ ${theme.include(body_top_include)}
 
 
 	</header>
+
+	<#--
+		<#if is_signed_in>
+				<#if use_favorites_quickadd >
+					<div id="favorites">
+						<@includePortlet portlet_id=favorites_quickadd_portlet_id />
+					</div>
+				</#if>
+		</#if>
+	-->
 
 	<div id="content">
 		<div class="container-normal">
@@ -145,7 +158,6 @@ ${theme.include(body_bottom_include)}
 ${theme.include(bottom_include)}
 
 <script type="text/javascript" src="${javascript_folder}/pojs/classie.js"></script>
-<script type="text/javascript" src="${javascript_folder}/pojs/uisearch.js"></script>
 <script type="text/javascript" src="${javascript_folder}/pojs/pojs.js"></script>
 
 <script type="text/javascript" src="${javascript_folder}/modules/ifeed-consumer.js"></script>

@@ -63,7 +63,8 @@
     .favorite-trigger {
 
       background: transparent;
-
+      border: 1px solid transparent;
+      border-width: 1px 1px 0 1px;
       cursor: pointer;
       display: block;
       font-size: 32px;
@@ -72,11 +73,7 @@
       padding: 5px 10px 0 10px;
       position: relative;
       text-decoration: none;
-
-      border: 1px solid transparent;
-      border-width: 1px 1px 0 1px;
       @include border-radius(3px 3px 0 0);
-
 
       .link-label {
         font-size: 0;
@@ -91,22 +88,19 @@
         color: $vgrintra-yellow;
       }
 
-
     }
 
     .quick-add-panel {
-
+      background: $vgrintra-white;
+      border: 1px solid $vgrintra-yellow;
       display: none;
-
       position: absolute;
       right: 0;
       top: 45px;
-
-      width: 300px;
-      background: #fff;
-      border: 1px solid $vgrintra-alto;
-      @include border-radius(3px);
+      width: 350px;
       z-index: 1000;
+      @include border-radius(3px);
+
 
       .quick-add-panel-inner {
         padding: 10px;
@@ -118,13 +112,11 @@
       }
 
       .link-button {
-        float: right;
-
-        margin: 0;
-
-        background: $vgrintra-white;
-        line-height: 1.0;
         background: $vgrintra-yellow;
+        color: $vgrintra-white;
+        float: right;
+        line-height: 1.0;
+        margin: 0;
         padding: 4px;
         @include border-radius(3px);
 
@@ -143,9 +135,11 @@
         }
       }
 
-
-
-
+      .portlet-msg-info {
+        background: transparent;
+        border: none;
+        color: $vgrintra-mineshaft;
+      }
 
     }
 
@@ -154,6 +148,7 @@
       .favorite-trigger {
         background: $vgrintra-white;
         border-color: $vgrintra-alto;
+        border-color: $vgrintra-yellow;
         z-index: 1001;
       }
 
@@ -166,8 +161,14 @@
 
   }
 
+}
 
-
-
-
+&.ie {
+  #favorites {
+    .favorites-quickadd {
+      .quick-add-panel {
+        top: 44px;
+      }
+    }
+  }
 }
