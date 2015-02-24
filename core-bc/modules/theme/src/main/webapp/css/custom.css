@@ -33,6 +33,7 @@ body {
 		@import 'partials/atoms/alerts';
 		@import 'partials/atoms/node-info';
     @import 'partials/atoms/quotes';
+		@import 'partials/atoms/wrapper';
 
 		@import 'partials/molecules/block-navigation';
 		@import 'partials/molecules/bookmarks';

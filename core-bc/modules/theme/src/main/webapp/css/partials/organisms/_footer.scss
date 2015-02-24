@@ -1,0 +1,11 @@
+#footer {
+  background: $vgrintra-emperor;
+  height: $footer-height;
+
+  .footer-inner {
+    padding: 20px 0;
+    text-align: center;
+    @include pie-clearfix();
+  }
+
+}

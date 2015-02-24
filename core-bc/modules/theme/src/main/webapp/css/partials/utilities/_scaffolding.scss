@@ -2,19 +2,6 @@
 // Things like main content padding/margins
 // --------
 
-// Wrapper
-#wrapper {
-	padding: 1em 1em;
-
-	padding-top: 0;
-
-	@include medium {
-		padding: 2em 5em;
-		padding-top: 0;
-	}
-}
-
-
 .portlet-column-content.empty {
 	padding: 0;
 }

@@ -115,16 +115,6 @@ ${theme.include(body_top_include)}
 
 	</header>
 
-	<#--
-		<#if is_signed_in>
-				<#if use_favorites_quickadd >
-					<div id="favorites">
-						<@includePortlet portlet_id=favorites_quickadd_portlet_id />
-					</div>
-				</#if>
-		</#if>
-	-->
-
 	<div id="content">
 		<div class="container-normal">
 
@@ -144,14 +134,13 @@ ${theme.include(body_top_include)}
 				${theme.wrapPortlet("portlet.ftl", content_include)}
 			</#if>
 		</div>
-
 	</div>
 
-	<footer id="footer" role="contentinfo">
-		<div class="container-normal"></div>
-	</footer>
+	<div class="footer-push"></div>
 
 </div>
+<#include "${full_templates_path}/footer.ftl" />
+
 
 ${theme.include(body_bottom_include)}
 

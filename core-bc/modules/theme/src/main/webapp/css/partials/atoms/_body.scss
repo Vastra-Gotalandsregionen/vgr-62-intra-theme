@@ -1,4 +1,8 @@
-//
+&,
+body {
+  height: 100%;
+}
+
 body {
 	font-family: 'Lato', Helvetica, sans-serif;
 	margin: 0;
@@ -26,6 +30,6 @@ body {
 &.ie {
 	body {
 		@include word-break(keep-all);
-		
+
 	}
 }
