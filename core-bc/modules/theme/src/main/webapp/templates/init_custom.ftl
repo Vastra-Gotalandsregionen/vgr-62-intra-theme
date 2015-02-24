@@ -52,6 +52,10 @@
 
 <#assign favorites_quickadd_portlet_id = "favoritesquickadd_WAR_oppnaprogramfavoritesportlet" />
 
+<#------ Links ----------------------------------------------------------------------------------------------------------------->
+
+<#assign vgr_logo_link = "http://intra.vgregion.se/sv/Insidan/" />
+
 
 <#------ Page Edit Mode ----------------------------------------------------------------------------------------------------------------->
 <#------ Whether or not portlet titles and other UI components should be displayed. Also used to show/hide dockbar.  ------>

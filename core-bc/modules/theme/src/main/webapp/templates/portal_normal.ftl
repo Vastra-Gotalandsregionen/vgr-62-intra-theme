@@ -44,7 +44,7 @@ ${theme.include(body_top_include)}
 		<div id="topBar">
 				<div class="container-normal">
 
-					<a class="logo-vgr" href="http://www.vgregion.se">
+					<a class="logo-vgr" href="${vgr_logo_link}">
 						<img src="${images_folder}/theme/logo/vgr-logo-white.png" alt="V&auml;stra G&ouml;talandsregionen" />
 					</a>
 
