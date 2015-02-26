@@ -100,6 +100,8 @@
       width: 350px;
       z-index: 1000;
       @include border-radius(3px);
+      @include single-box-shadow(rgba(0, 0, 0, 0.2), $default-box-shadow-h-offset, 40px, 40px, $default-box-shadow-spread, $default-box-shadow-inset);
+      border-color: $vgrintra-alto;
 
 
       .quick-add-panel-inner {
@@ -141,6 +143,10 @@
         color: $vgrintra-mineshaft;
       }
 
+      .pagination {
+        margin: 10px 0;
+      }
+
     }
 
     &.favorites-quickadd-open {
@@ -148,7 +154,7 @@
       .favorite-trigger {
         background: $vgrintra-white;
         border-color: $vgrintra-alto;
-        border-color: $vgrintra-yellow;
+        //border-color: $vgrintra-yellow;
         z-index: 1001;
       }
 
