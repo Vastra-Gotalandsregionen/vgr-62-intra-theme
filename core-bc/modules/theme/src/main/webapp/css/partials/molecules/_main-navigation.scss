@@ -1,9 +1,10 @@
-#navigation {
+.main-navigation {
 
   background: $menu-bar-bg;
   font-weight: $menu-bar-font-weight;
 
-  margin: 5px 0 0 0;
+  margin: 0;
+  //position: relative;
 
   @include border-radius();
 
@@ -19,26 +20,42 @@
 
     list-style: none;
     margin: 0;
-    padding: 5px 0;
+    padding: 0;
     text-align: center;
 
     > li {
 
       display: inline-block;
+      position: static;
 
       margin: 0 10px;
 
       > a {
+        background: $vgrintra-white;
+        border: 1px solid transparent;
+        border-width: 1px 1px 0 1px;
         color: $menu-bar-color;
         display: inline-block;
         font-size: 1.1em;
         font-weight: normal;
+        height: $navbar-height;
+        margin: 0.3em 0 0 0;
+        padding: 0.4em 0.4em 0 0.4em;
+        position: relative;
         text-transform: uppercase;
+        @include border-radius(3px 3px 0 0);
       }
 
       &.selected {
         > a {
           font-weight: bold;
+        }
+      }
+
+      &.on {
+        a {
+          border-color: $vgrintra-alto;
+          z-index: 4;
         }
       }
 

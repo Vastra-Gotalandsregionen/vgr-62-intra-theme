@@ -1,4 +1,5 @@
 <div class="navbar-tools">
+  <#--
   <div class="navbar-tools-item">
     <a href="/kris-och-katastrof" class="panic-btn">
       <span>
@@ -6,6 +7,7 @@
       </span>
     </a>
   </div>
+  -->
     <#if use_favorites_quickadd >
       <div class="navbar-tools-item">
         <div id="favorites">

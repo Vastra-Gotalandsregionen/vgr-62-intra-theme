@@ -25,24 +25,48 @@ AUI().add('vgrintra-theme-main',function(A) {
         renderUI: function() {
           var instance = this;
 
-          instance._fixBookmarksPortlet();
+          instance._initMegaDrop();
         },
 
         bindUI: function() {
           var instance = this;
         },
 
-        _fixBookmarksPortlet: function() {
+        _initMegaDrop: function () {
           var instance = this;
 
-          // If signed out
-          if(!themeDisplay.isSignedIn()) {
-            var bookmarksPortlet = A.one('#p_p_id_intrabookmarks_WAR_bookmarksjsfportlet_');
+          /*
+        	$('.main-navigation .dropdown').hover(
+        		function () {
+        			if ($(window).width() >= breakPointMedium) {
+        				$(this).addClass('on');
+        				$(this).find('.mega-drop').addClass('on');
+        			}
+        		},
+        		function () {
+        			if ($(window).width() >= breakPointMedium) {
+        				$(this).removeClass('on');
+        				$(this).find('.mega-drop').removeClass('on');
+        			}
+        		}
+        	);
 
-            if(bookmarksPortlet) {
-              bookmarksPortlet.addClass('no-portlet-content');
-            }
-          }
+          */
+
+          var dropdownItems = A.all('.main-navigation .dropdown');
+
+          dropdownItems.on('hover', function(e) {
+            var currentTarget = e.currentTarget;
+
+            currentTarget.addClass('on');
+            currentTarget.one('.mega-drop').addClass('on');
+
+          }, function(e) {
+            var currentTarget = e.currentTarget;
+
+            currentTarget.removeClass('on');
+            currentTarget.one('.mega-drop').removeClass('on');
+          }, instance);
 
         },
 

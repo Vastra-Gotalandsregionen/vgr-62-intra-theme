@@ -129,6 +129,7 @@
 
       .favorites-list {
         margin-top: 10px;
+        min-height: 370px;
 
         li:first-child {
           a {
@@ -154,7 +155,6 @@
       .favorite-trigger {
         background: $vgrintra-white;
         border-color: $vgrintra-alto;
-        //border-color: $vgrintra-yellow;
         z-index: 1001;
       }
 

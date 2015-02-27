@@ -55,9 +55,9 @@ ${theme.include(body_top_include)}
 						</#if>
 
 						<#if !is_signed_in>
-							<a href="${sign_in_url}" data-redirect="${is_login_redirect_required?string}" id="sign-in" rel="nofollow">${sign_in_text}</a>
+							<a href="${sign_in_url}" data-redirect="${is_login_redirect_required?string}" id="signIn" class="signin" rel="nofollow">${sign_in_text}</a>
 						<#else>
-							<a href="${sign_out_url}" id="sign-out" rel="nofollow">${sign_out_text}</a>
+							<a href="${sign_out_url}" id="signOut" class="signout" rel="nofollow">${sign_out_text}</a>
 						</#if>
 					</div>
 
@@ -67,12 +67,14 @@ ${theme.include(body_top_include)}
 
 		<div id="navBar">
 			<div class="container-normal">
-				<div class="row-fluid">
-
 					<div class="logo-wrap">
 						<a class="logo-anslaget" href="/">
 							<img src="${images_folder}/theme/logo/anslaget-logo.png" alt="ANSlaget" />
 						</a>
+					</div>
+
+					<div class="tools-wrap">
+						<#include "${full_templates_path}/nav_bar_tools.ftl" />
 					</div>
 
 					<div class="navigation-wrap">
@@ -80,36 +82,6 @@ ${theme.include(body_top_include)}
 							<#include "${full_templates_path}/navigation.ftl" />
 						</#if>
 					</div>
-
-					<div class="tools-wrap">
-						<#include "${full_templates_path}/nav_bar_tools.ftl" />
-					</div>
-
-					<#--
-
-					<div class="span2">
-						<a class="logo-anslaget" href="/">
-							<img src="${images_folder}/theme/logo/anslaget-logo.png" alt="ANSlaget" />
-						</a>
-					</div>
-
-					<div class="span7">
-
-						<#if has_navigation || is_signed_in>
-							<#include "${full_templates_path}/navigation.ftl" />
-						</#if>
-
-					</div>
-
-					<div class="span3">
-						<#include "${full_templates_path}/nav_bar_tools.ftl" />
-
-					</div>
-				-->
-
-
-
-				</div>
 			</div>
 		</div>
 

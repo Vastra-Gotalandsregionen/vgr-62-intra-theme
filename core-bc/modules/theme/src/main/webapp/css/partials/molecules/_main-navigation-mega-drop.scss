@@ -1,0 +1,61 @@
+.main-navigation {
+  .sub-menu {
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 2;
+
+    .mega-drop {
+      background: $vgrintra-white;
+      margin: 0 1em;
+      display: none;
+      position: absolute;
+      top: -1px;
+      width: 100%;
+
+
+      border-top: 1px solid $vgrintra-alto;
+
+      @include clearfix(); // Needed for everything but Chrome
+    	clear: both; // Needed for everything but Chrome
+
+      @include medium {
+        margin: 0;
+        @include single-box-shadow(rgba(0, 0, 0, 0.2), $default-box-shadow-h-offset, 40px, 40px, $default-box-shadow-spread, $default-box-shadow-inset);
+      }
+
+      &.on {
+        display: block;
+      }
+
+      .inner {
+        @include medium {
+          padding: 10px 0;
+        }
+      }
+
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      }
+
+      a {
+          height: auto;
+          line-height: 26px;
+          @include medium {
+              padding: 0 32px 0 0;
+          }
+      }
+
+    }
+  }
+}

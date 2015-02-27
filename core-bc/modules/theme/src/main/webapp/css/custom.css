@@ -47,6 +47,7 @@ body {
 		@import 'partials/molecules/intra-list';
 		@import 'partials/molecules/intra-panel';
     @import 'partials/molecules/main-navigation';
+		@import 'partials/molecules/main-navigation-mega-drop';
 		@import 'partials/molecules/mobile-navigation';
 		@import 'partials/molecules/navbar-tools';
 		@import 'partials/molecules/navigation-list';

@@ -44,20 +44,31 @@
 			}
 
 			a {
+				border-right: 1px solid $vgrintra-white;
 				color: $vgrintra-white;
 				display: inline-block;
+				line-height: 1.0;
+				margin: 0 10px 0 0;
+				padding: 0 10px 0 0;
 				text-decoration: none;
 
 				&:hover {
 					text-decoration: underline;
 				}
+
+				&.signin,
+				&.signout {
+					border-right: 0;
+					margin-right: 0;
+					padding-right: 0;
+				}
+
 			}
 
 			ul.navigation-list {
 				li {
 					display: inline-block;
-					margin-right: 10px;
-					a {}
+					margin: 0;
 				}
 			}
 
@@ -68,8 +79,8 @@
 
 	#navBar {
 		border-bottom: 1px solid $vgrintra-mercury;
-
-		padding: 0.9em 0;
+		padding: 0;
+		position: relative;
 		@include pie-clearfix();
 
 		.row-fluid {
@@ -77,21 +88,26 @@
 		}
 
 		.logo-wrap {
-			position: absolute;
-			left: 0;
-			top: 0;
+			float: left;
+			height: 45px;
+			overflow: hidden;
+			padding: 0.6em 0;
 			width: 20%;
+
+			height: $navbar-height;
 		}
 
 		.tools-wrap {
-			position: absolute;
-			right: 0;
-			top: 0;
+			float: right;
+			padding: 0.6em 0;
 			width: 20%;
+
+			height: $navbar-height;
 		}
 
 		.navigation-wrap {
 			margin: 0 20%;
+			padding: 0.5em 0 0 0;
 		}
 
 		[class*="span"] {
@@ -100,6 +116,7 @@
 		}
 
 		.logo-anslaget {
+			display: block;
 			width: 100%;
 		}
 
