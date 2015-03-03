@@ -46,6 +46,28 @@
         @include border-radius(3px 3px 0 0);
       }
 
+      &.dropdown {
+        > a {
+          &:after {
+              content: "";
+              display: inline-block;
+              float: right;
+              margin-right: 0.4em;
+              position: relative;
+              right: -5px;
+              top: 50%;
+
+              @include triangle(10px, $menu-bar-color, down);
+
+              @include medium {
+                  float: none;
+                  top: 2px;
+              }
+          }
+        }
+
+      }
+
       &.selected {
         > a {
           font-weight: bold;

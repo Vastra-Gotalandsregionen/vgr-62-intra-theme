@@ -9,15 +9,13 @@
 
     .mega-drop {
       background: $vgrintra-white;
+      border-top: 1px solid $vgrintra-alto;
       margin: 0 1em;
       display: none;
       position: absolute;
+      text-align: left;
       top: -1px;
       width: 100%;
-
-
-      border-top: 1px solid $vgrintra-alto;
-
       @include clearfix(); // Needed for everything but Chrome
     	clear: both; // Needed for everything but Chrome
 
@@ -36,24 +34,56 @@
         }
       }
 
-
       ul {
         list-style: none;
         margin: 0;
         padding: 0;
+        @include clearfix();
 
         li {
-          display: inline-block;
-          margin: 0 10px;
+          display: block;
+          min-height: 70px;
+          position: relative;
+          width: 100%;
+          @include box-sizing(border-box);
+
+          @include medium {
+            float: left;
+            margin-left: 2.5641%;
+            width: 23.07692%;
+          }
+
+          &:nth-child(4n) {
+            margin-left: 0;
+          }
+
         }
       }
 
       a {
-          height: auto;
-          line-height: 26px;
-          @include medium {
-              padding: 0 32px 0 0;
+        display: block;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2em;
+
+        span {
+          display: block;
+          padding: 0.6em 1.0em;
+
+          @include border-radius(3px);
+
+          @include transition-property(background-color);
+          @include transition-duration(0.25s);
+          @include transition-timing-function(ease-in-out);
+
+        }
+
+        &:hover {
+          span {
+            background-color: $vgrintra-mercury;
           }
+        }
+
       }
 
     }
