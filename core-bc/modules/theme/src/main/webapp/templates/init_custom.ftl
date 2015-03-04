@@ -43,7 +43,7 @@
 
 <#------ Favorites ----------------------------------------------------------------------------------------------------------------->
 
-<#assign use_favorites_quickadd = true />
+<#assign use_favorites_quickadd = false />
 
 <#assign favorites_quickadd_portlet_id = "favoritesquickadd_WAR_oppnaprogramfavoritesportlet" />
 
@@ -67,7 +67,7 @@
 <#assign show_page_edit = show_page_edit || is_scope_group_admin />
 
 <#if show_page_edit>
-	<#assign css_class = css_class + " page-edit dockbar-split" />
+	<#assign css_class = css_class + " page-edit_ dockbar-split_ dockbar-fixed" />
 </#if>
 
 

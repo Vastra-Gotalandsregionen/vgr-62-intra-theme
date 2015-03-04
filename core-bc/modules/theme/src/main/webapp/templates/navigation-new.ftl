@@ -23,9 +23,52 @@
 						<div class="container-normal">
 							<div class="inner">
 									<#if nav_item.hasChildren()>
+										<#assign nav_childs = nav_item.getChildren() />
+										<#assign chunk_size = (nav_childs?size / 4)?ceiling />
 
+										<#assign nav_child_chunks = nav_childs?chunk(chunk_size) />
+
+										<#assign numberOfChilds = nav_childs?size />
+										<#assign numberOfColumns = 4 />
+										<#assign ratioChildsColumns = numberOfChilds / numberOfColumns />
+										<#assign minItemsPerColumn = ratioChildsColumns?floor />
+										<#assign maxItemsPerColumn = ratioChildsColumns?ceiling />
+										<#assign childColumnModulus = numberOfChilds % numberOfColumns />
+										<#assign numberOfColumnsWithMax = numberOfColumns * (ratioChildsColumns - childColumnModulus) />
 
 										<#--
+										<p>numberOfChilds: ${numberOfChilds}</p>
+										<p>numberOfColumns: ${numberOfColumns}</p>
+										<p>numberOfColumnsWithMax: ${numberOfColumnsWithMax}</p>
+
+										<p>ratioChildsColumns: ${ratioChildsColumns}</p>
+										<p>minItemsPerColumn: ${minItemsPerColumn}</p>
+										<p>maxItemsPerColumn: ${maxItemsPerColumn}</p>
+										<p>childColumnModulus: ${childColumnModulus}</p>
+
+										-->
+										<#--
+										<#assign lastStop = 0 />
+
+										<#list 1..numberOfColumns as i>
+											<#assign itemsPerColumn = minItemsPerColumn />
+
+											<#if i lte numberOfColumnsWithMax>
+												<#assign itemsPerColumn = maxItemsPerColumn />
+											</#if>
+
+											<#assign indexStart = lastStop />
+											<#assign indexStop = i * itemsPerColumn -1 />
+
+											<p>i=${i}, loopa ${indexStart} tom ${indexStop}</p>
+
+											<#assign lastStop = indexStop />
+
+										</#list>
+										-->
+
+										<#--
+
 										<div class="row-fluid submenu-row">
 
 											<div class="span3">
@@ -85,6 +128,9 @@
 										</div>
 										-->
 
+										<#--
+
+
 										<ul class="child-menu" role="menu">
 											<#list nav_item.getChildren() as nav_child>
 												<#assign nav_child_attr_selected = "" />
@@ -104,6 +150,7 @@
 												</li>
 											</#list>
 										</ul>
+										-->
 
 
 									</#if>

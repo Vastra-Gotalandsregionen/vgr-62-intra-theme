@@ -47,9 +47,8 @@ ${theme.include(body_top_include)}
 					<a class="logo-vgr" href="${vgr_logo_link}">
 
 
-
-						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo.png" />
 						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
+						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo.png" />
 
 						<img src="${vgr_logo_src}" alt="V&auml;stra G&ouml;talandsregionen" />
 					</a>
