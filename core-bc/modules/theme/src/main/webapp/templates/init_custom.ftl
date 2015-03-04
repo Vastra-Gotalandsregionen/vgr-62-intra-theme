@@ -67,7 +67,7 @@
 <#assign show_page_edit = show_page_edit || is_scope_group_admin />
 
 <#if show_page_edit>
-	<#assign css_class = css_class + " page-edit_ dockbar-split_ dockbar-fixed" />
+	<#assign css_class = css_class + " page-edit dockbar-split_ dockbar-fixed" />
 </#if>
 
 
