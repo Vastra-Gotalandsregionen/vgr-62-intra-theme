@@ -66,8 +66,9 @@ body {
 		@import 'partials/organisms/content';
     @import 'partials/organisms/footer';
     @import 'partials/organisms/header';
-		//@import 'partials/organisms/new-header';
 		@import 'partials/organisms/intra-bookmarks';
+
+		@import 'partials/organisms/new-design';
 
 }
 

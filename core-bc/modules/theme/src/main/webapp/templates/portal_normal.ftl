@@ -31,7 +31,7 @@ ${theme.include(body_top_include)}
 
 <div class="container-fluid" id="wrapper">
 
-	<header id="header" role="banner">
+	<header id="header" role="banner" class="header-alt-1">
 
 		<#if top_alert_article_id?has_content>
 			<div id="topAlert">
@@ -44,9 +44,10 @@ ${theme.include(body_top_include)}
 		<div id="topBar">
 				<div class="container-normal">
 
-					<a class="logo-vgr" href="${vgr_logo_link}">
-
-
+					<#--
+						<a class="logo-vgr" href="${vgr_logo_link}">
+					-->
+					<a class="logo-vgr" href="/">
 
 						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo.png" />
 						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
@@ -85,7 +86,10 @@ ${theme.include(body_top_include)}
 
 					<div class="navigation-wrap">
 						<#if has_navigation || is_signed_in>
-							<#include "${full_templates_path}/navigation.ftl" />
+							<#--
+								<#include "${full_templates_path}/navigation.ftl" />
+							-->
+							<#include "${full_templates_path}/navigation-with-drop.ftl" />
 						</#if>
 					</div>
 			</div>

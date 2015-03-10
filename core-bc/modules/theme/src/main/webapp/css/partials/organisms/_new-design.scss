@@ -1,0 +1,324 @@
+body {
+  background: #fff;
+}
+
+// Links
+$new-link-color: #3069a1;
+
+a {
+	color: $new-link-color;
+	text-decoration: none;
+
+	&:visited {
+    color: $new-link-color;
+	}
+
+	&:hover {
+    color: $new-link-color;
+		text-decoration: underline;
+	}
+
+	&:active {
+    color: $new-link-color;
+	}
+}
+
+
+#header {
+
+  #topBar {
+    background: $vgrintra-yellow;
+  }
+
+  #logoBar {
+    .logo-bar-inner {
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+
+  #navBar {
+
+    .logo-wrap {
+      display: none;
+    }
+
+    .tools-wrap {
+      display: block;
+      height: auto;
+
+      padding: 0.2em 0;
+      padding-bottom: 0;
+    }
+
+    .navigation-wrap {
+      padding: 0;
+    }
+
+  }
+
+  .main-navigation {
+    background: transparent;
+    padding: 0;
+
+    > ul {
+      > li {
+        > a {
+          background: transparent;
+          border: 0;
+          height: auto;
+          margin: 0;
+          padding: 0.6em 0.4em;
+          @include border-radius(0);
+        }
+
+        &.on {
+          > a {
+            background: $vgrintra-mercury;
+            border: none;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}
+
+
+// Block Navigation
+.block-navigation {
+  .block-navigation-item {
+    > a {
+
+      background: $vgrintra-white;
+      color: $block-navigation-text-color;
+      border: 1px solid $vgrintra-mercury;
+      @include border-radius(3px);
+
+      .title {
+        background: $vgrintra-mercury;
+        border: none;
+        color: $vgrintra-tundora;
+        margin: -1em -1em 1em -1em;
+        padding: 0.5em;
+
+        @include border-radius(2px 2px 0 0);
+      }
+
+      &:hover {
+        border-color: $block-navigation-border-hover;
+        text-decoration: none;
+
+        .title {
+          background: $vgrintra-yellow;
+          color: $vgrintra-white;
+        }
+      }
+
+
+    }
+  }
+}
+
+// portlet
+.portlet {
+
+  .portlet-content {
+    background: transparent;
+    border: none;
+    @include border-radius(2px);
+  }
+
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+// Navigation portlet
+.portlet-navigation {
+
+  .portlet-content {
+    border: 1px solid $vgrintra-mercury;
+
+  }
+
+	.nav-menu {
+
+    background: $vgrintra-wildsand;
+
+    > ul {
+      margin: 0;
+      padding: 0.3em 0.7em;
+    }
+
+		> h2 {
+
+      background: $vgrintra-yellow;
+      border: none;
+      color: $vgrintra-white;
+      margin: 0;
+      padding: 0.5em;
+      position: relative;
+      text-align: center;
+
+      @include border-radius(2px 2px 0 0);
+
+      &:after {
+        background: transparent;
+        border-style: solid;
+        border-color: $vgrintra-yellow transparent transparent transparent;
+        border-width: 10px 10px 0 10px;
+        bottom: -10px;
+        content: " ";
+        height: 0;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+      }
+
+      a {
+        color: $vgrintra-white;
+			}
+
+
+		}
+
+    ul {
+      &.level-1 {
+        li {
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+
+	}
+
+}
+
+// Content Box
+.content-box {
+
+  margin: -1em;
+  margin: 0;
+  padding: 0 1em 1em 1em;
+
+  @include border-radius(2px);
+  border: 1px solid $vgrintra-mercury;
+  //border-top-width: 0;
+
+  > h2 {
+    background: $vgrintra-mercury;
+    border: none;
+    border-left: 7px solid $vgrintra-yellow;
+    color: $vgrintra-tundora;
+    margin: 0 -1em 0 -1em;
+    padding: 0.5em;
+
+    @include border-radius(2px 2px 0 0);
+  }
+
+  .content-box-bd {
+    //padding: 1em 0;
+    padding-top: 1em;
+  }
+
+  .more-link-wrap {
+    bottom: 1em;
+    right: 1em;
+  }
+
+}
+
+.columns-intra-2-4-a .row-2 .span3 .content-box {
+  min-height: 430px;
+}
+
+
+// News
+.news-box {
+
+  background: $vgrintra-wildsand;
+  margin: 0;
+  padding: 0;
+
+  > h1 {
+    margin: 0;
+  }
+
+  .news-items {
+
+    .news-item {
+
+      .news-item-inner {
+        border: none;
+      }
+
+      .news-item-heading {
+        color: $vgrintra-tundora;
+        font-weight: normal;
+      }
+
+      > a {
+        padding: 0.5em;
+
+        border: 1px solid $vgrintra-alto;
+        border-width: 0 1px 1px 1px;
+
+        &:hover {
+
+          background-color: $vgrintra-mercury;
+
+          .news-item-inner {
+            background-color: transparent;
+          }
+        }
+      }
+
+      // Every even
+      &:nth-child(2n) {
+        > a {
+          border-left-color: transparent;
+        }
+      }
+
+
+
+    }
+
+  }
+
+  .more-link {
+    bottom: 1em;
+    right: 1em;
+  }
+
+}
+
+
+
+// Favorites quickadd
+#favorites {
+  .favorites-quickadd {
+
+    .favorite-trigger {
+      //border: 0;
+    }
+
+    &.favorites-quickadd-open {
+
+      .favorite-trigger {
+        //background: $vgrintra-mercury;
+      }
+
+    }
+
+  }
+
+}
