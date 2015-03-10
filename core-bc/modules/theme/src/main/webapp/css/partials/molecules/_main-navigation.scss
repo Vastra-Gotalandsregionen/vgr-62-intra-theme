@@ -1,12 +1,9 @@
 .main-navigation {
 
-  background: $menu-bar-bg;
+  background: transparent;
   font-weight: $menu-bar-font-weight;
-
   margin: 0;
-  //position: relative;
-
-  @include border-radius();
+  padding: 0;
 
   a {
     text-decoration: none;
@@ -31,38 +28,35 @@
       margin: 0 10px;
 
       > a {
-        background: $vgrintra-white;
-        border: 1px solid transparent;
-        border-width: 1px 1px 0 1px;
+        background: transparent;
+        border: 0;
         color: $menu-bar-color;
         display: inline-block;
         font-size: 1.1em;
         font-weight: normal;
-        height: $navbar-height;
-        margin: 0.3em 0 0 0;
-        padding: 0.4em 0.4em 0 0.4em;
+        margin: 0;
+        padding: 0.6em 0.4em;
         position: relative;
         text-transform: uppercase;
-        @include border-radius(3px 3px 0 0);
       }
 
       &.dropdown {
         > a {
           &:after {
-              content: "";
-              display: inline-block;
-              float: right;
-              margin-right: 0.4em;
-              position: relative;
-              right: -5px;
-              top: 50%;
+            content: "";
+            display: inline-block;
+            float: right;
+            margin-right: 0.4em;
+            position: relative;
+            right: -5px;
+            top: 50%;
 
-              @include triangle(10px, $menu-bar-color, down);
+            @include triangle(10px, $menu-bar-color, down);
 
-              @include medium {
-                  float: none;
-                  top: 2px;
-              }
+            @include medium {
+                float: none;
+                top: 2px;
+            }
           }
         }
 
@@ -76,7 +70,7 @@
 
       &.on {
         a {
-          border-color: $vgrintra-alto;
+          background: $vgrintra-mercury;
           z-index: 4;
         }
       }

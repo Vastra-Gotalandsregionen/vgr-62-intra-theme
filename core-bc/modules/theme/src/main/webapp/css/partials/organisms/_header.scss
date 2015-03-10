@@ -72,7 +72,6 @@
 				}
 			}
 
-
 		}
 
 	}
@@ -87,62 +86,18 @@
 			position: relative;
 		}
 
-		.logo-wrap {
-			float: left;
-			height: 45px;
-			overflow: hidden;
-			padding: 0.6em 0;
-			width: 15%;
-
-			height: $navbar-height;
-		}
-
 		.tools-wrap {
+			display: block;
 			float: right;
-			padding: 0.6em 0;
+			padding: 0.2em 0 0 0;
 			width: 15%;
-
-			height: $navbar-height;
 		}
 
 		.navigation-wrap {
 			margin: 0 15%;
-			padding: 0.5em 0 0 0;
-		}
-
-		[class*="span"] {
-			//margin-left: 0;
-			//margin-right: 0;
-		}
-
-		.logo-anslaget {
-			display: block;
-			width: 100%;
-		}
-
-
-	}
-
-
-
-}
-
-// More space on top when dockbar is displayed.
-.page-edit {
-	#header {
-
-		#topAlert {
-			//padding-top: 2.5em;
-		}
-
-
-		#topBar {
-			//padding-top: 2.5em;
-		}
-
-		#topAlert + #topBar {
-			//padding-top: 0.7em;
+			padding: 0;
 		}
 
 	}
+
 }

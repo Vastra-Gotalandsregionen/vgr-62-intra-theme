@@ -24,7 +24,7 @@ h6 {
 
 a {
 	color: $link-color;
-	text-decoration: underline;
+	text-decoration: none;
 
 	&:visited {
 		color: $link-color;
@@ -32,7 +32,7 @@ a {
 
 	&:hover {
 		color: $link-hover-color;
-		text-decoration: none;
+		text-decoration: underline;
 	}
 
 	&:active {

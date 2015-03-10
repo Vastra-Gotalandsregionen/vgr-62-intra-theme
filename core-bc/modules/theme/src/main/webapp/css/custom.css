@@ -68,8 +68,6 @@ body {
     @import 'partials/organisms/header';
 		@import 'partials/organisms/intra-bookmarks';
 
-		@import 'partials/organisms/new-design';
-
 }
 
 @import 'partials/shame';

@@ -40,8 +40,10 @@
 	}
 
 	.portlet-content {
-
+		background: transparent;
+		border: none;
 		padding: 0;
+		@include border-radius(2px);
 
 		.portlet-body {
 			padding: 0;
@@ -58,18 +60,42 @@
 // Navigation Portlet
 .portlet-navigation {
 
+	.portlet-content {
+    border: 1px solid $vgrintra-mercury;
+  }
+
 	.nav-menu {
 
+		background: $vgrintra-wildsand;
+
 		> h2 {
-			border-bottom: 1px solid $vgrintra-yellow;
-			color: $vgrintra-yellow;
+			background: $vgrintra-yellow;
+			border: none;
+			color: $vgrintra-white;
 			font-size: 1.1em;
 			text-transform: uppercase;
-			margin: 0 0 0.5em 0;
-			padding: 0 0 0.5em 0;
+			margin: 0;
+			padding: 0.5em;
+			position: relative;
+			text-align: center;
+			@include border-radius(2px 2px 0 0);
+
+			&:after {
+        background: transparent;
+        border-style: solid;
+        border-color: $vgrintra-yellow transparent transparent transparent;
+        border-width: 10px 10px 0 10px;
+        bottom: -10px;
+        content: " ";
+        height: 0;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+      }
 
 			a {
-				color: $vgrintra-yellow;
+				color: $vgrintra-white;
 			}
 		}
 
@@ -79,7 +105,6 @@
 			padding: 0;
 
 			li {
-
 				margin: 3px 0;
 				margin-left: 10px;
 				padding: 3px 0;
@@ -102,15 +127,20 @@
 
 			&.level-1 {
 
+				margin: 0;
+	      padding: 0.3em 0.7em;
+
 				li {
 
 					margin-left: 0;
-
 					border-bottom: 1px solid $vgrintra-alto;
+
+					&:last-child {
+            border-bottom: none;
+          }
 
 					a {
 						font-size: 1.0em;
-						//text-transform: uppercase;
 					}
 
 					ul {

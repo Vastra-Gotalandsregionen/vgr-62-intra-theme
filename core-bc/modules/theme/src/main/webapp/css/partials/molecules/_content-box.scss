@@ -1,20 +1,27 @@
 .content-box {
-
+  border: 1px solid $vgrintra-mercury;
+  margin: 0;
+  padding: 0 1em 1em 1em;
   position: relative;
 
+  @include border-radius(2px);
   @include box-sizing('border-box');
 
   > h2 {
-    border-bottom: 1px solid $vgrintra-yellow;
-    color: $vgrintra-yellow;
+    background: $vgrintra-mercury;
+    border: none;
+    border-left: 7px solid $vgrintra-yellow;
+    color: $vgrintra-tundora;
     font-size: 1.1em;
+    margin: 0 -1em 0 -1em;
+    padding: 0.5em;
     text-transform: uppercase;
-    margin: 0 0 0.5em 0;
-    padding: 0 0 0.5em 0;
+    @include border-radius(2px 2px 0 0);
   }
 
   .content-box-bd {
 
+    padding-top: 1em;
     position: relative;
 
     .entry-item {
@@ -78,8 +85,8 @@
 
   .more-link-wrap {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 1em;
+    right: 1em;
   }
 
 }
@@ -88,7 +95,7 @@
   .row-2 {
     .span3 {
       .content-box {
-        min-height: 380px;
+        min-height: 430px;
       }
     }
   }

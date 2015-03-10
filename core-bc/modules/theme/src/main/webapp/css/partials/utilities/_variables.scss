@@ -14,11 +14,10 @@ $bp-large : 1199px;
 // http://chir.ag/projects/name-that-color/
 
 $vgrintra-yellow: #f1a81a;
-$vgrintra-blue: #065293;
-
-$vgrintra-blue: #005195;
+$vgrintra-blue: #3069a1;
+//#065293
+//#005195
 //#3069a1
-
 $vgrintra-red: #9a002c;
 $vgrintra-green: #55772f;
 
@@ -38,31 +37,20 @@ $vgrintra-mineshaftlight:	#333;
 $vgrintra-mineshaft:	#222;
 $vgrintra-graycod:		#111;
 
-
-
 $vgrintra-black: 		#000;
 $vgrintra-white: #fff;
 
-
-
-
 $vgrintra-yellowlight: #fde8c8;
 $vgrintra-appricot: #fad396;
-
 
 $vgrintra-graydark:		#4a4a4a;
 
 $vgrintra-graylight:		#ececec;
 
 
-/*
-f6f6f6
-*/
-
-
 // Colors
 // -------------------------
-$bg:					$vgrintra-wildsand;
+$bg:					$vgrintra-white;
 $text-color:			$textColor; //From _aui_variables
 
 $content-bg:  $vgrintra-yellowlight;
@@ -73,8 +61,8 @@ $heading-h1-color:		$vgrintra-mineshaft;
 $link-color:			$linkColor; //From _aui_variables
 $link-hover-color:		$linkColorHover; //From _aui_variables
 
-$link-color: $vgrintra-mineshaft;
-$link-color-hover: $vgrintra-black;
+$link-color: $vgrintra-blue;
+$link-color-hover: $vgrintra-blue;
 
 $menu-bar-bg:				$vgrintra-white;
 $menu-bar-color:			$vgrintra-tundora;

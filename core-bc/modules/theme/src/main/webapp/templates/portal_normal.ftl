@@ -44,14 +44,8 @@ ${theme.include(body_top_include)}
 		<div id="topBar">
 				<div class="container-normal">
 
-					<#--
-						<a class="logo-vgr" href="${vgr_logo_link}">
-					-->
 					<a class="logo-vgr" href="/">
-
-						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo.png" />
 						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
-
 						<img src="${vgr_logo_src}" alt="V&auml;stra G&ouml;talandsregionen" />
 					</a>
 
@@ -74,11 +68,6 @@ ${theme.include(body_top_include)}
 
 		<div id="navBar">
 			<div class="container-normal">
-					<div class="logo-wrap">
-						<a class="logo-anslaget" href="/">
-							<img src="${images_folder}/theme/logo/anslaget-logo.png" alt="ANSlaget" />
-						</a>
-					</div>
 
 					<div class="tools-wrap">
 						<#include "${full_templates_path}/nav_bar_tools.ftl" />
