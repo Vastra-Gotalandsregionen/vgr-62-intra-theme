@@ -3,7 +3,13 @@
     <div class="container-normal">
       <div class="row-fluid">
         <div class="span4 first">
-          &nbsp;
+
+          <#if footer_col_1_article_id?has_content>
+            <@includeWCD group_id=group_id article_id=footer_col_1_article_id />
+           <#else>
+            &nbsp;
+           </#if>
+
         </div>
         <div class="span4">
           <a class="logo-vgr" href="${vgr_logo_link}">
@@ -11,7 +17,13 @@
           </a>
         </div>
         <div class="span4 last">
-          &nbsp;
+
+          <#if footer_col_2_article_id?has_content>
+            <@includeWCD group_id=group_id article_id=footer_col_2_article_id />
+           <#else>
+            &nbsp;
+           </#if>
+
         </div>
       </div>
     </div>

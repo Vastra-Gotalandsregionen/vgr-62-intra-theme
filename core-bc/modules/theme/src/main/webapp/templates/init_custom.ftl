@@ -29,6 +29,9 @@
 
 <#assign top_alert_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-top-alert-article-id", group_id, "")  />
 
+<#assign footer_col_1_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-footer-col-1-article-id", group_id, "")  />
+<#assign footer_col_2_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-footer-col-2-article-id", group_id, "")  />
+
 <#------ Theme Settings ----------------------------------------------------------------------------------------------------------------->
 
 

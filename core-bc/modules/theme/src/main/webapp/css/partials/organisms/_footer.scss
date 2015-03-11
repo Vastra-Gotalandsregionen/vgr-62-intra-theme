@@ -1,11 +1,45 @@
 #footer {
   background: $vgrintra-emperor;
+  color: $vgrintra-white;
   height: $footer-height;
 
   .footer-inner {
     padding: 20px 0;
     text-align: center;
     @include pie-clearfix();
+
+    .span4.first,
+    .span4.last {
+      //text-align: left;
+    }
+
+  }
+
+  .portlet-boundary {
+    margin: 0;
+  }
+
+  a,
+  a:visited {
+    color: $vgrintra-white;
+    text-decoration: underline;
+
+    &:hover {
+      color: $vgrintra-white;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    margin: 0 0 0.2em 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a.logo-vgr {
+    display: inline-block;
   }
 
 }
