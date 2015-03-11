@@ -24,67 +24,6 @@
 							<div class="inner">
 									<#if nav_item.hasChildren()>
 
-
-										<#--
-										<div class="row-fluid submenu-row">
-
-											<div class="span3">
-												<div class="submenu-col-inner">
-													<#list nav_item.getChildren() as nav_child>
-														<#if nav_child_index % 4 == 0>
-															<div>
-																<#assign child_item_url = nav_child.getURL() />
-																<#assign child_item_name = nav_child.getName() />
-																<a href="${child_item_url}">${child_item_name}</a>
-															</div>
-														</#if>
-													</#list>
-												</div>
-											</div>
-											<div class="span3">
-												<div class="submenu-col-inner">
-													<#list nav_item.getChildren() as nav_child>
-														<#if (nav_child_index-1) % 4 == 0>
-															<div>
-																<#assign child_item_url = nav_child.getURL() />
-																<#assign child_item_name = nav_child.getName() />
-																<a href="${child_item_url}">${child_item_name}</a>
-															</div>
-														</#if>
-													</#list>
-												</div>
-											</div>
-											<div class="span3">
-												<div class="submenu-col-inner">
-													<#list nav_item.getChildren() as nav_child>
-														<#if (nav_child_index-2) % 4 == 0>
-															<div>
-																<#assign child_item_url = nav_child.getURL() />
-																<#assign child_item_name = nav_child.getName() />
-																<a href="${child_item_url}">${child_item_name}</a>
-															</div>
-														</#if>
-													</#list>
-												</div>
-											</div>
-
-											<div class="span3">
-												<div class="submenu-col-inner">
-													<#list nav_item.getChildren() as nav_child>
-														<#if (nav_child_index-3) % 4 == 0>
-															<div>
-																<#assign child_item_url = nav_child.getURL() />
-																<#assign child_item_name = nav_child.getName() />
-																<a href="${child_item_url}">${child_item_name}</a>
-															</div>
-														</#if>
-													</#list>
-												</div>
-											</div>
-
-										</div>
-										-->
-
 										<ul class="child-menu" role="menu">
 											<#list nav_item.getChildren() as nav_child>
 												<#assign nav_child_attr_selected = "" />

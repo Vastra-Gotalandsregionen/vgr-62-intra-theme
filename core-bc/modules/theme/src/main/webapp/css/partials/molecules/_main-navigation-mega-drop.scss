@@ -41,6 +41,25 @@
         @include clearfix();
 
         li {
+          display: inline;
+
+          a {
+            color: $vgrintra-tundora;
+            display: inline-block;
+            height: 3.0em;
+            line-height: 3.0em;
+            padding: 0 4.0em 0 0;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+        }
+
+        /*
+        li {
           display: block;
           min-height: 70px;
           position: relative;
@@ -58,8 +77,10 @@
           }
 
         }
+        */
       }
 
+      /*
       a {
         display: block;
         margin: 0;
@@ -85,6 +106,7 @@
         }
 
       }
+      */
 
     }
   }

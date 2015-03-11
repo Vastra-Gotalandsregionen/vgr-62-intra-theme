@@ -29,7 +29,9 @@
 
       > a {
         background: transparent;
-        border: 0;
+        border: 1px solid transparent;
+        border-bottom-width: 0;
+        border-top-width: 3px;
         color: $menu-bar-color;
         display: inline-block;
         font-size: 1.1em;
@@ -38,6 +40,7 @@
         padding: 0.6em 0.4em;
         position: relative;
         text-transform: uppercase;
+        @include border-radius(3px 3px 0 0);
       }
 
       &.dropdown {
@@ -69,8 +72,10 @@
       }
 
       &.on {
-        a {
-          background: $vgrintra-mercury;
+        > a {
+          background: $vgrintra-white;
+          border-color: $vgrintra-alto;
+          border-top-color: $vgrintra-yellow;
           z-index: 4;
         }
       }

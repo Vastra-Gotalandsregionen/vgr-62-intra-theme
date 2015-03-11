@@ -78,7 +78,7 @@
 
 	#navBar {
 		border-bottom: 1px solid $vgrintra-mercury;
-		padding: 0;
+		padding: 0.2em 0 0 0;
 		position: relative;
 		@include pie-clearfix();
 
@@ -89,7 +89,7 @@
 		.tools-wrap {
 			display: block;
 			float: right;
-			padding: 0.2em 0 0 0;
+			padding: 0;
 			width: 15%;
 		}
 
