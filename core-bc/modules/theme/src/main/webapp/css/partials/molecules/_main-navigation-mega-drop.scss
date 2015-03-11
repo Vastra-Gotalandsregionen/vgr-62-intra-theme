@@ -39,6 +39,7 @@
         margin: 0;
         padding: 0;
         @include clearfix();
+        text-align: center;
 
         li {
           display: inline;
@@ -48,7 +49,7 @@
             display: inline-block;
             height: 3.0em;
             line-height: 3.0em;
-            padding: 0 4.0em 0 0;
+            padding: 0 2.0em;
             text-decoration: none;
 
             &:hover {
