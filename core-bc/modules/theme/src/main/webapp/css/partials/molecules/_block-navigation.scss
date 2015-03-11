@@ -42,6 +42,21 @@ $block-navigation-item-height: 200px;
         @include border-radius(2px 2px 0 0);
       }
 
+      .img-wrap {
+        float: left;
+        padding-top: 0.35em;
+        width: 27%;
+
+        img {
+          width: 100%;
+          @include filter(grayscale(100%));
+        }
+      }
+
+      .description {
+        margin-left: 32%;
+      }
+
       &:hover {
         border-color: $block-navigation-border-hover;
         text-decoration: none;
@@ -50,20 +65,12 @@ $block-navigation-item-height: 200px;
           background: $vgrintra-yellow;
           color: $vgrintra-white;
         }
-      }
 
-      .img-wrap {
-        float: left;
-        padding-top: 0.35em;
-        width: 27%;
-
-        img {
-          width: 100%;
+        .img-wrap {
+          img {
+            @include filter(grayscale(0%));
+          }
         }
-      }
-
-      .description {
-        margin-left: 32%;
       }
 
     }
