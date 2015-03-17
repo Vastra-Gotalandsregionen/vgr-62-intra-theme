@@ -1,6 +1,6 @@
-# README #
+# Intra Theme #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+The project oppna-program-intra-theme is a Liferay theme plugin which includes customizations of the look and feel of a Liferay portal (css, images, markup and javascript).
 
 ### What is this repository for? ###
 
