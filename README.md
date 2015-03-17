@@ -32,7 +32,9 @@ At the same hierarchical level are also aui.css and _aui_variables.scss which ar
 ### Partials ###
 All styling are placed in files in the partials folder. Each partial starts with an underscore and has the file extension .scss. When importing a partial with the file name _my-partial.scss the underscore and file extension is excluded:
 
-  @import 'partials/some-folder/my-partial';
+~~~~
+@import 'partials/some-folder/my-partial';
+~~~~
 
 ### _variables.scss ###
 
