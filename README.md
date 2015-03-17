@@ -44,7 +44,7 @@ The varibles partial includes variables resused throughout all the other partial
 
 The partial structure follows the [ Atomic Design ](http://bradfrost.com/blog/post/atomic-web-design/) model, in which components are structure as atoms, molecules and organisms.
 
-![Atomic Design](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
+![Atomic Design](https://bytebucket.org/monator/vgr-62-intra-theme/raw/6ac227cced22ac24e8d16dc768bf89e69840994f/documentation/atomic-design.png?token=795539668464286054cf443242dcdf726153f7a6)
 
 * Atoms are the basic building blocks of matter. Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button.
 * Molecules are groups of atoms bonded together. For example, a form label, input or button aren’t too useful by themselves, but combine them together as a form and now they can actually do something together.
