@@ -2,7 +2,7 @@
 
 The project oppna-program-intra-theme is a Liferay theme plugin which includes customizations of the look and feel of a Liferay portal (css, images, markup and javascript).
 
-![Screenshot of ANS-intra](https://bytebucket.org/monator/vgr-62-intra-theme/raw/c3d468e9c91ca8917daefb4e8b60b2f471178e41/documentation/ans-intra-screen.png?token=adb16746c8efaa36a7bfc2e87c7d451a7ac1172d)
+![Screenshot of ANS-intra](https://raw.githubusercontent.com/mrg3kko/vgr-62-intra-theme/master/documentation/ans-intra-screen.png)
 
 ## Templates ##
 
@@ -46,7 +46,7 @@ The varibles partial includes variables resused throughout all the other partial
 
 The partial structure follows the [ Atomic Design ](http://bradfrost.com/blog/post/atomic-web-design/) model, in which components are structure as atoms, molecules and organisms.
 
-![Atomic Design](https://bytebucket.org/monator/vgr-62-intra-theme/raw/6ac227cced22ac24e8d16dc768bf89e69840994f/documentation/atomic-design.png?token=795539668464286054cf443242dcdf726153f7a6)
+![Atomic Design](https://raw.githubusercontent.com/mrg3kko/vgr-62-intra-theme/master/documentation/atomic-design.png)
 
 * Atoms are the basic building blocks of matter. Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button.
 * Molecules are groups of atoms bonded together. For example, a form label, input or button aren’t too useful by themselves, but combine them together as a form and now they can actually do something together.
