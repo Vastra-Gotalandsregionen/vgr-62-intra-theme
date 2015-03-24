@@ -6,6 +6,9 @@
 
 	#topBar {
 		background: $vgrintra-yellow;
+
+		//@include background(linear-gradient(to bottom right, #ec8a00, #f6ab04));
+
 		padding: 0.7em 0;
 		@include pie-clearfix();
 
