@@ -44,9 +44,15 @@ ${theme.include(body_top_include)}
 		<div id="topBar">
 				<div class="container-normal">
 
-					<a class="logo-vgr" href="/">
-						<#assign vgr_logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
-						<img src="${vgr_logo_src}" alt="V&auml;stra G&ouml;talandsregionen" />
+					<a class="logo-vgr ${logo_css_class}" href="/">
+
+						<#assign logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
+
+						<#if layout.layoutSet.isLogo()>
+							<#assign logo_src = site_logo />
+						</#if>
+
+						<img src="${logo_src}" alt="V&auml;stra G&ouml;talandsregionen" />
 					</a>
 
 					<div class="top-bar-tools">
