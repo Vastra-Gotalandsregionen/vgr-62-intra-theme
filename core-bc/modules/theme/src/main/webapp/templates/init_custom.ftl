@@ -11,6 +11,7 @@
 
 <#assign portletItemLocalService = serviceLocator.findService("com.liferay.portal.service.PortletItemLocalService") />
 <#assign portletPreferencesLocalService = serviceLocator.findService("com.liferay.portal.service.PortletPreferencesLocalService") />
+<#assign roleLocalService = serviceLocator.findService("com.liferay.portal.service.RoleLocalService") />
 <#assign userGroupLocalService = serviceLocator.findService("com.liferay.portal.service.UserGroupLocalService") />
 
 <#------ Define variables ----------------------------------------------------------------------------------------------------------------->
@@ -44,6 +45,18 @@
 
 <#assign is_omni_admin = permission_checker.isOmniadmin() />
 
+
+<#assign has_user_dockbar_role = false />
+<#assign dockbarRole = roleLocalService.fetchRole(company_id, "Site Dockbar")! />
+<#if dockbarRole?has_content>
+	<#assign userGroupRoles = roleLocalService.getUserGroupRoles(user_id, group_id) />
+	<#list userGroupRoles as userGroupRole>
+		<#if userGroupRole.getRoleId() == dockbarRole.getRoleId()>
+			<#assign has_user_dockbar_role = true />
+		</#if>
+	</#list>
+</#if>
+
 <#------ Favorites ----------------------------------------------------------------------------------------------------------------->
 
 <#assign use_favorites_quickadd = true />
@@ -61,7 +74,7 @@
 <#assign show_page_edit = false />
 
 <#-- Include Omni Admin -->
-<#assign show_page_edit = show_page_edit || is_omni_admin />
+<#assign show_page_edit = show_page_edit || is_omni_admin || has_user_dockbar_role />
 
 <#-- Include Scope Group Owner -->
 <#assign show_page_edit = show_page_edit || is_scope_group_owner />
