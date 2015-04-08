@@ -1,0 +1,70 @@
+.news-featured {
+
+  background: $vgrintra-wildsand;
+  display: block;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+
+  img {
+    bottom: 0;
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    width: 100%;
+
+    &.transparent {
+
+      background: transparent url(../images/theme/news/allmant-okat.png) 50% 60% no-repeat;
+
+      &.akut { background-image: url(../images/theme/news/akut.png); }
+      &.allmant-okat { background-image: url(../images/theme/news/allmant-okat.png); }
+      &.ekonomi { background-image: url(../images/theme/news/ekonomi.png); }
+      &.folkhalsa { background-image: url(../images/theme/news/folkhalsa.png); }
+      &.forskning { background-image: url(../images/theme/news/forskning.png); }
+      &.handelser { background-image: url(../images/theme/news/handelser.png); }
+      &.it-telefoni { background-image: url(../images/theme/news/it-telefoni.png); }
+      &.miljo { background-image: url(../images/theme/news/miljo.png); }
+      &.nyans { background-image: url(../images/theme/news/nyans.png); }
+      &.patientvard-sakerhet { background-image: url(../images/theme/news/patientvard-sakerhet.png); }
+      &.personal { background-image: url(../images/theme/news/personal.png); }
+      &.sakerhet-pers-lokal { background-image: url(../images/theme/news/sakerhet-pers-lokal.png); }
+      &.utveckling { background-image: url(../images/theme/news/utveckling.png); }
+      &.vgr { background-image: url(../images/theme/news/vgr.png); }
+
+    }
+  }
+
+  h3 {
+    background: $vgrintra-emperor;
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+
+    span {
+      color: $vgrintra-white;
+      display: inline-block;
+      padding: 0.5em;
+      margin-right: 1.5em;
+
+      &:after {
+        display: inline-block;
+        content: "\00BB";
+        float: right;
+        font-size: 1.4em;
+        line-height: 1.0;
+        position: absolute;
+        right: 0.5em;
+        top: 50%;
+        width: 10px;
+        @include transform(translateY(-50%));
+      }
+    }
+
+  }
+
+
+}
