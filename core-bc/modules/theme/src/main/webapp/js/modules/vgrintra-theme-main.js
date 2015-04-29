@@ -33,40 +33,10 @@ AUI().add('vgrintra-theme-main',function(A) {
         },
 
         _initMegaDrop: function () {
-          var instance = this;
 
-          /*
-        	$('.main-navigation .dropdown').hover(
-        		function () {
-        			if ($(window).width() >= breakPointMedium) {
-        				$(this).addClass('on');
-        				$(this).find('.mega-drop').addClass('on');
-        			}
-        		},
-        		function () {
-        			if ($(window).width() >= breakPointMedium) {
-        				$(this).removeClass('on');
-        				$(this).find('.mega-drop').removeClass('on');
-        			}
-        		}
-        	);
-
-          */
-
-          var dropdownItems = A.all('.main-navigation .dropdown');
-
-          dropdownItems.on('hover', function(e) {
-            var currentTarget = e.currentTarget;
-
-            currentTarget.addClass('on');
-            currentTarget.one('.mega-drop').addClass('on');
-
-          }, function(e) {
-            var currentTarget = e.currentTarget;
-
-            currentTarget.removeClass('on');
-            currentTarget.one('.mega-drop').removeClass('on');
-          }, instance);
+          var megaDrop = new A.VgrIntraMegaDrop({
+            navigationNode: '#navigation'
+          }).render();
 
         },
 
@@ -84,7 +54,9 @@ AUI().add('vgrintra-theme-main',function(A) {
   requires: [
   'aui-base',
   'event',
-  'substitute'
+  'ifeed-consumer', // Not used in this module but loaded here so its available for other components later (ifeed WCD)
+  'substitute',
+  'vgrintra-megadrop'
   ]
 }
 );

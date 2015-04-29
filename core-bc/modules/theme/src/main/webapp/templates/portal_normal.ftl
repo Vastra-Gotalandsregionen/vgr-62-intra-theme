@@ -129,6 +129,7 @@ ${theme.include(bottom_include)}
 
 <script type="text/javascript" src="${javascript_folder}/modules/ifeed-consumer.js"></script>
 
+<script type="text/javascript" src="${javascript_folder}/modules/vgrintra-megadrop.js"></script>
 <script type="text/javascript" src="${javascript_folder}/modules/vgrintra-theme-main.js"></script>
 <script type="text/javascript" src="${javascript_folder}/theme-main.js"></script>
 

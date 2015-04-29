@@ -159,8 +159,6 @@ AUI().add('ifeed-consumer',function(A) {
 
           }
 
-          console.log('_setupDisplayType - displayType is: ' + displayType);
-          console.log('_setupDisplayType - hasTitleNode is: ' + hasTitleNode);
         },
 
         _someFunction: function() {

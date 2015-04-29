@@ -7,12 +7,17 @@
   position: relative;
   text-decoration: none;
 
+  //border: 1px solid $vgrintra-mercury;
+  @include border-radius(2px);
+
   img {
     bottom: 0;
     display: block;
     max-width: 100%;
     position: absolute;
     width: 100%;
+
+    @include border-radius(2px);
 
     &.transparent {
 
@@ -37,7 +42,10 @@
   }
 
   h3 {
-    background: $vgrintra-emperor;
+
+    @include background-opacity($vgrintra-emperor, 0.8);
+    @include border-radius(0 0 2px 2px);
+
     font-size: 1.0em;
     margin: 0;
     padding: 0;
