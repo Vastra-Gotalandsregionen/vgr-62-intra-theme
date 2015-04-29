@@ -36,8 +36,6 @@ AUI().add('vgrintra-theme-main',function(A) {
         _initIfeedConsumers: function() {
           var instance = this;
 
-          console.log('_initIfeedConsumers');
-
           var ifeedConsumerNodes = A.all('.ifeed-consumer');
 
           ifeedConsumerNodes.each(function (item, index, list) {
