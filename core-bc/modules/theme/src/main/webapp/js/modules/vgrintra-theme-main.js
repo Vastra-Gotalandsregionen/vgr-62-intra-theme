@@ -25,11 +25,30 @@ AUI().add('vgrintra-theme-main',function(A) {
         renderUI: function() {
           var instance = this;
 
+          instance._initIfeedConsumers();
           instance._initMegaDrop();
         },
 
         bindUI: function() {
           var instance = this;
+        },
+
+        _initIfeedConsumers: function() {
+          var instance = this;
+
+          console.log('_initIfeedConsumers');
+
+          var ifeedConsumerNodes = A.all('.ifeed-consumer');
+
+          ifeedConsumerNodes.each(function (item, index, list) {
+
+            var ifeedConsumer = new A.IfeedConsumer({
+              consumerNode: item
+            }).render();
+
+          });
+
+
         },
 
         _initMegaDrop: function () {
@@ -54,7 +73,7 @@ AUI().add('vgrintra-theme-main',function(A) {
   requires: [
   'aui-base',
   'event',
-  'ifeed-consumer', // Not used in this module but loaded here so its available for other components later (ifeed WCD)
+  'ifeed-consumer',
   'substitute',
   'vgrintra-megadrop'
   ]

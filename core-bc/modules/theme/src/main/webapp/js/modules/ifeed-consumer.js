@@ -7,9 +7,7 @@ AUI().add('ifeed-consumer',function(A) {
   NS = 'ifeed-consumer',
 
   // Attributes
-  FEED_CONTAINERS = 'feedContainers',
-  NAMESPACE = 'namespace',
-  TEMPLATE_NODE = 'templateNode',
+  CONSUMER_NODE = 'consumerNode',
 
   // Custom Attributes
   FOO = 'foo'
@@ -19,13 +17,9 @@ AUI().add('ifeed-consumer',function(A) {
     {
       ATTRS: {
 
-        feedContainers: {},
-
-        namespace: {
-          value: ''
+        consumerNode: {
+          setter: A.one
         },
-
-        templateNode: {},
 
         someAttr: {
           value: null
@@ -38,8 +32,20 @@ AUI().add('ifeed-consumer',function(A) {
 
       prototype: {
 
+        feedContainers: null,
+        templateNode: null,
+
         initializer: function(config) {
           var instance = this;
+
+          var consumerNode = instance.get(CONSUMER_NODE);
+
+          var feedContainers = consumerNode.all('.ifeed-parsed-container');
+          var templateNodeId = consumerNode.getAttribute('data-templatenodeid');
+          var templateNode = A.one('#' + templateNodeId);
+
+          instance.feedContainers = feedContainers;
+          instance.templateNode = templateNode;
 
           instance._configureHandlebars();
           instance._getFeedViews();
@@ -77,9 +83,7 @@ AUI().add('ifeed-consumer',function(A) {
         _getFeedViews: function() {
           var instance = this;
 
-          var feedContainers = instance.get(FEED_CONTAINERS);
-
-          feedContainers.each(function (item, index, list) {
+          instance.feedContainers.each(function (item, index, list) {
             instance._getJSONP(item);
           });
         },
@@ -108,7 +112,7 @@ AUI().add('ifeed-consumer',function(A) {
           var instance = this;
 
           var json = response;
-          var templateNode = instance.get(TEMPLATE_NODE)
+          var templateNode = instance.templateNode;
 
           var templateNodeContent = templateNode.getHTML();
           var template = Handlebars.compile(templateNodeContent);
