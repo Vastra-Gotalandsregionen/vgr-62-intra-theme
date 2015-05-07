@@ -48,7 +48,7 @@
         @include box-sizing(border-box);
 
         .news-item-inner {
-          height: 50px;
+          height: 80px;
           overflow: hidden;
         }
       }
@@ -80,31 +80,33 @@
       }
 
       .news-item-heading {
-        color: $vgrintra-tundora;
-        font-weight: normal;
+        //color: $vgrintra-graydove;
       }
 
       .news-item-summary {
         display: none;
       }
 
+
+
       // First two
       &:first-child,
       &:first-child + .news-item {
         .news-item-inner {
-          background-color: $vgrintra-white;
-          height: 130px;
-
-          .news-item-summary {
-            display: block;
-          }
-
-          .news-item-heading {
-            color: $vgrintra-graydove;
-            font-weight: bold;
-          }
-
+          //background-color: $vgrintra-white;
+          //height: 130px;
         }
+
+        .news-item-heading {
+          //color: $vgrintra-graydove;
+          //font-weight: bold;
+        }
+
+        .news-item-summary {
+          //display: block;
+        }
+
+
       }
 
 

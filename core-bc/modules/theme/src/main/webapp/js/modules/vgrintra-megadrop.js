@@ -59,7 +59,7 @@ AUI().add('vgrintra-megadrop',function(A) {
             }
 
             instance.activeNode = currentTarget;
-            instance.currentTimer = A.later(500, instance, instance._show);
+            instance.currentTimer = A.later(400, instance, instance._show);
           }, function(e) {
             var currentTarget = e.currentTarget;
 
@@ -68,7 +68,7 @@ AUI().add('vgrintra-megadrop',function(A) {
             }
 
             instance.activeNode = currentTarget;
-            instance.currentTimer = A.later(500, instance, instance._hide);
+            instance.currentTimer = A.later(400, instance, instance._hide);
 
           }, instance);
 

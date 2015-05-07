@@ -73,6 +73,11 @@
       .entry-content {
         margin-left: 60px;
         padding: 0;
+
+        h3 {
+          margin: 0 0 0.2em 0;
+        }
+
       }
 
       &:last-child {
@@ -91,6 +96,14 @@
 
   &.content-box-simple {
       border: none;
+  }
+
+  &.content-box-wide {
+    .entry-item {
+      .entry-content {
+        margin-left: 80px;
+      }
+    }
   }
 
 }
