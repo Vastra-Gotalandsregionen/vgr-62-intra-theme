@@ -78,6 +78,12 @@
           margin: 0 0 0.2em 0;
         }
 
+        .time,
+        .place {
+          display: inline-block;
+          margin-right: 10px;
+        }
+
       }
 
       &:last-child {
@@ -100,8 +106,20 @@
 
   &.content-box-wide {
     .entry-item {
+
+      border: 1px solid $vgrintra-wildsand;
+      @include border-radius(3px);
+
+      .entry-date {
+        .entry-date-inner {
+          min-height: 60px;
+          @include border-radius(3px 0 0 3px);
+        }
+      }
+
       .entry-content {
-        margin-left: 80px;
+        margin-left: 50px;
+        padding: 10px 10px;
       }
     }
   }
