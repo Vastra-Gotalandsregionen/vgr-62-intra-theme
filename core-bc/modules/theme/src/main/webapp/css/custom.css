@@ -46,7 +46,7 @@ body {
 		@import 'partials/molecules/ifeed-parsed';
 		@import 'partials/molecules/intra-list';
 		@import 'partials/molecules/intra-panel';
-    @import 'partials/molecules/main-navigation';
+    	@import 'partials/molecules/main-navigation';
 		@import 'partials/molecules/main-navigation-mega-drop';
 		@import 'partials/molecules/mobile-navigation';
 		@import 'partials/molecules/navbar-tools';
@@ -56,6 +56,7 @@ body {
 		@import 'partials/molecules/news-listing';
 		@import 'partials/molecules/panic-btn';
 		@import 'partials/molecules/puff-box';
+		@import 'partials/molecules/search';
 		@import 'partials/molecules/searchbox';
 		@import 'partials/molecules/staff-week';
 		@import 'partials/molecules/staff-week-box';

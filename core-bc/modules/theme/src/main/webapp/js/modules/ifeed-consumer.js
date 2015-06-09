@@ -118,7 +118,7 @@ AUI().add('ifeed-consumer',function(A) {
           var template = Handlebars.compile(templateNodeContent);
 
           var feedContentNode = feedContainer.one('.ifeed-parsed-content');
-
+            
           feedContentNode.setHTML(template(json));
 
           instance._setupDisplayType(feedContainer);
