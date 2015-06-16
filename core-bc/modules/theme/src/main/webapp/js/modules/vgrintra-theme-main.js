@@ -27,6 +27,7 @@ AUI().add('vgrintra-theme-main',function(A) {
 
           instance._initIfeedConsumers();
           instance._initMegaDrop();
+          instance._initTopSearch();
         },
 
         bindUI: function() {
@@ -54,6 +55,17 @@ AUI().add('vgrintra-theme-main',function(A) {
           var megaDrop = new A.VgrIntraMegaDrop({
             navigationNode: '#navigation'
           }).render();
+
+        },
+
+        _initTopSearch: function () {
+
+          var topSearchInput = A.one('#header .top-search .search-keywords');
+          var searchPortletInput = A.one('.portlet-search [name = "_3_keywords"]');
+
+          if(topSearchInput && searchPortletInput) {
+            topSearchInput.set('value', searchPortletInput.get('value'));
+          }
 
         },
 

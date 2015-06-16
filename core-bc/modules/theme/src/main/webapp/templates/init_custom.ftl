@@ -33,8 +33,28 @@
 <#assign footer_col_1_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-footer-col-1-article-id", group_id, "")  />
 <#assign footer_col_2_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-footer-col-2-article-id", group_id, "")  />
 
+
+<#assign search_layout_friendly_url = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-search-layout-friendly-url", group_id, "")  />
+<#assign search_layout_column_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.model.Group", "CUSTOM_FIELDS", "vgr-intra-search-layout-column-id", group_id, "")  />
+
+
+<#if search_layout_friendly_url = "">
+	<#assign search_layout_friendly_url = "/sok" />
+</#if>
+
+<#if search_layout_column_id = "">
+	<#assign search_layout_column_id = "1" />
+</#if>
+
 <#------ Theme Settings ----------------------------------------------------------------------------------------------------------------->
 
+<#assign show_search = false />
+
+<#assign theme_setting_show_search = theme_display.getThemeSetting("show-search")! />
+
+<#if theme_setting_show_search = "true">
+	<#assign show_search = true />
+</#if>
 
 <#------ Permissions Checker ----------------------------------------------------------------------------------------------------------------->
 

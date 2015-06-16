@@ -1,100 +1,33 @@
-$sb-search-height: 40px;
-$sb-search-width: 40px;
-
-.sb-search {
-  display: none;
+.searchbox {
 
 
   float: right;
-  height: $sb-search-height;
-  margin: 0;
-  min-width: $sb-search-width;
-  overflow: hidden;
-	position: relative;
-	width: 0%;
+  margin: 0 0 0 10px;
+  padding: 0 0 0 10px;
 
-	@include transition(width 0.3s);
-	-webkit-backface-visibility: hidden;
+  position: relative;
 
   form {
     margin: 0;
+    padding: 0;
   }
 
   input[type="text"],
-  input[type="search"] {
-    background: $vgrintra-mercury;
-    border: none;
-    color: $vgrintra-mineshaft;
-    font-family: inherit;
-    font-size: 16px;
-    height: $sb-search-height;
-    margin: 0;
-    outline: none;
-    padding: 10px 65px 10px 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-
-    @include box-shadow(none);
-    @include box-sizing(border-box);
-    @include placeholder($vgrintra-boulder);
+  .btn {
+    display: inline-block;
+    vertical-align: top;
   }
 
-  .sb-icon-search,
-  .sb-search-submit  {
-    cursor: pointer;
-    display: block;
-    height: $sb-search-height;
-    line-height: $sb-search-height;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: $sb-search-width;
+  input[type="text"] {
+
   }
 
-  .sb-search-submit {
-    background: $vgrintra-white; /* IE needs this */
-    border: none;
-    color: transparent;
-    outline: none;
-    z-index: -1;
-
-    @include opacity(0);
-  }
-
-  .sb-icon-search {
-    background: $vgrintra-yellow;
+  .btn {
+    background: $vgrintra-emperor;
+    border: 1px solid $vgrintra-emperor;
     color: $vgrintra-white;
-    font-size: 22px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    speak: none;
-    text-transform: none;
-    z-index: 90;
-    -webkit-font-smoothing: antialiased;
+    margin-left: 3px;
+    
   }
-
-  // Open state
-  &.sb-search-open {
-    width: 100%;
-
-    .sb-icon-search {
-      background: shade($vgrintra-yellow, 2%);
-      color: $vgrintra-white;
-      z-index: 11;
-    }
-
-    .sb-search-submit {
-      z-index: 90;
-    }
-
-  }
-
 
 }

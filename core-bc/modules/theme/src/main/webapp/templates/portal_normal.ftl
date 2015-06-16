@@ -66,6 +66,12 @@ ${theme.include(body_top_include)}
 						<#else>
 							<a href="${sign_out_url}" id="signOut" class="signout" rel="nofollow">${sign_out_text}</a>
 						</#if>
+
+						<#if show_search>
+							<span class="top-search searchbox">
+								<#include "${full_templates_path}/search.ftl" />
+							</span>
+						</#if>
 					</div>
 
 
