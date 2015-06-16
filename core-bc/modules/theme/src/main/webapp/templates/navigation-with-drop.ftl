@@ -24,6 +24,9 @@
 							<div class="inner">
 									<#if nav_item.hasChildren()>
 
+										<#--
+										-->	
+
 										<ul class="child-menu" role="menu">
 											<#list nav_item.getChildren() as nav_child>
 												<#assign nav_child_attr_selected = "" />
@@ -43,6 +46,91 @@
 												</li>
 											</#list>
 										</ul>
+										
+										<#-- New columized menu. Not finished yet. Will replace above child menu. -->
+
+										<#-- 
+										<#assign navChildren = nav_item.getChildren() />
+										<#assign navChildrenSize = navChildren?size />
+										<#assign navChildrenColumns = 3 />
+										<#assign navChildrenPerColumn = (navChildrenSize/navChildrenColumns)?ceiling />
+
+										<div class="row-fluid">
+											
+											<div class="span4 first col1">
+												<div>Col 1</div>
+												<#list navChildren as nav_child>
+													<#if nav_child_index gte 0 && nav_child_index lt (1*navChildrenPerColumn)>
+														<#assign nav_child_attr_selected = "" />
+														<#assign nav_child_css_class = "" />
+
+														<#if nav_item.isSelected()>
+															<#assign nav_child_attr_selected = "aria-selected='true'" />
+															<#assign nav_child_css_class = "selected" />
+														</#if>
+
+														<div>
+															<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
+																<span>
+																	${nav_child.getName()}
+																</span>
+															</a>
+														</div>
+													</#if>
+												</#list>
+											</div>
+
+											<div class="span4 col2">
+												<div>Col 2</div>
+												<#list navChildren as nav_child>
+													<#if nav_child_index gte (1*navChildrenPerColumn) && nav_child_index lt (2*navChildrenPerColumn)>
+														<#assign nav_child_attr_selected = "" />
+														<#assign nav_child_css_class = "" />
+
+														<#if nav_item.isSelected()>
+															<#assign nav_child_attr_selected = "aria-selected='true'" />
+															<#assign nav_child_css_class = "selected" />
+														</#if>
+
+														<div>
+															<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
+																<span>
+																	${nav_child.getName()}
+																</span>
+															</a>
+														</div>
+													</#if>
+												</#list>
+											</div>
+
+											<div class="span4 last col3">
+												<div>Col 3</div>
+												<#list navChildren as nav_child>
+													<#if nav_child_index gte (2*navChildrenPerColumn )>
+														<#assign nav_child_attr_selected = "" />
+														<#assign nav_child_css_class = "" />
+
+														<#if nav_item.isSelected()>
+															<#assign nav_child_attr_selected = "aria-selected='true'" />
+															<#assign nav_child_css_class = "selected" />
+														</#if>
+
+														<div>
+															<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
+																<span>
+																	${nav_child.getName()}
+																</span>
+															</a>
+														</div>
+													</#if>
+												</#list>												
+											</div>
+
+										</div>
+
+										-->
+
+
 
 
 									</#if>
