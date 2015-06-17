@@ -13,8 +13,11 @@ $block-navigation-item-height: 200px;
   @include pie-clearfix();
 
   .block-navigation-item {
-    float: left;
-    width: 33%;
+
+    @include small {
+      float: left;
+      width: 33%;
+    }
 
     > a {
       background: $vgrintra-white;

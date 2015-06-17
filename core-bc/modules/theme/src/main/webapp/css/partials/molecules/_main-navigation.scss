@@ -1,9 +1,18 @@
 .main-navigation {
 
   background: transparent;
+  display: none;
   font-weight: $menu-bar-font-weight;
   margin: 0;
   padding: 0;
+
+  &.open {
+    display: block;
+  }
+
+  @include small {
+    display: block;
+  }
 
   a {
     text-decoration: none;
@@ -22,47 +31,57 @@
 
     > li {
 
-      display: inline-block;
+      display: block;
       position: static;
-
       margin: 0 10px;
 
-      > a {
-        background: transparent;
-        border: 1px solid transparent;
-        border-bottom-width: 0;
-        border-top-width: 3px;
-        color: $menu-bar-color;
+      @include small {
         display: inline-block;
+      }
+
+      > a {
+
+        color: $menu-bar-color;
+        display: block;
         font-size: 1.1em;
         font-weight: normal;
         margin: 0;
         padding: 0.6em 0.4em;
-        position: relative;
         text-transform: uppercase;
-        @include border-radius(3px 3px 0 0);
+
+        @include small {
+          background: transparent;
+          border: 1px solid transparent;
+          border-bottom-width: 0;
+          border-top-width: 3px;
+          display: inline-block;
+          position: relative;
+          @include border-radius(3px 3px 0 0);
+        }
+
       }
 
-      &.dropdown {
-        > a {
-          &:after {
-            content: "";
-            display: inline-block;
-            float: right;
-            margin-right: 0.4em;
-            position: relative;
-            right: -5px;
-            top: 50%;
+      @include small {
+        &.dropdown {
+          > a {
+            &:after {
+              content: "";
+              display: inline-block;
+              float: right;
+              margin-right: 0.4em;
+              position: relative;
+              right: -5px;
+              top: 50%;
 
-            @include triangle(10px, $menu-bar-color, down);
+              @include triangle(10px, $menu-bar-color, down);
 
-            @include medium {
-                float: none;
-                top: 2px;
+              @include small {
+                  float: none;
+                  top: 2px;
+              }
             }
           }
         }
-
       }
 
       &.selected {

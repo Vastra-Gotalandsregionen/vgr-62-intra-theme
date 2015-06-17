@@ -130,4 +130,17 @@
 		}
 	}
 
+	.user-avatar-image {
+		//display: none;
+		max-width: 24px;
+		height: 24px;
+		width: auto;
+
+		@include medium {
+			display: inherit;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+
 }

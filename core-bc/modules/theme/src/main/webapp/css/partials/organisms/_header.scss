@@ -14,21 +14,49 @@
 
 		.logo-vgr {
 			display: block;
-			float: left;
-			position: relative;
+			text-align: center;
+
+			@include small {
+				float: left;
+				position: relative;
+				text-align: left;
+			}
 
 			img {
+				max-width: 150px;
 				width: 100%;
+
+				@include small {
+					
+					max-width: 100%;
+				}
 			}
 		}
 
 		.top-bar-tools {
 			display: block;
-			float: right;
-			position: relative;
+			text-align: center;
+
+			@include small {
+				float: right;
+				position: relative;
+				text-align: left;
+			}
 
 			.portlet-boundary {
 				margin-bottom: 0;
+			}
+
+			.top-bar-navigation {
+				display: block;
+				margin: 0.5em 0;
+				text-align: center;
+
+				@include small {
+					display: inline-block;
+					margin: 0;
+					text-align: left;
+				}
 			}
 
 			.portlet-journal-content {
@@ -91,14 +119,22 @@
 
 		.tools-wrap {
 			display: block;
-			float: right;
 			padding: 0;
-			width: 15%;
+			@include pie-clearfix();
+
+			@include small {
+				float: right;
+				width: 15%;
+			}
 		}
 
 		.navigation-wrap {
-			margin: 0 15%;
+			margin: 0;
 			padding: 0;
+
+			@include small {
+				margin: 0 15%;	
+			}
 		}
 
 	}

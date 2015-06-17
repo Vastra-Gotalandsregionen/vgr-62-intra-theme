@@ -98,26 +98,32 @@
 
   .sub-menu-new {
 
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    z-index: 2;
+
+    @include small {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      z-index: 2;
+    }
+
 
     .mega-drop {
-      background: $vgrintra-mercury;
-      border-top: 1px solid $vgrintra-alto;
-      margin: 0 1em;
-      display: none;
-      position: absolute;
-      text-align: left;
-      top: -1px;
-      width: 100%;
-      @include clearfix(); // Needed for everything but Chrome
-      clear: both; // Needed for everything but Chrome
 
-      @include medium {
+      display: none;
+
+      @include small {
+
+        background: $vgrintra-mercury;
+        border-top: 1px solid $vgrintra-alto;
         margin: 0;
+        display: none;
+        position: absolute;
+        text-align: left;
+        top: -1px;
+        width: 100%;
+        @include clearfix();
+        clear: both;
         @include single-box-shadow(rgba(0, 0, 0, 0.2), $default-box-shadow-h-offset, 40px, 40px, $default-box-shadow-spread, $default-box-shadow-inset);
       }
 
@@ -127,13 +133,12 @@
 
       .inner {
 
-        background: $vgrintra-white;
-        margin: 1.0em;
-        padding: 1.0em;
-
-        @include medium {
-          
+        @include small {
+          background: $vgrintra-white;  
+          margin: 1.0em;
+          padding: 1.0em;
         }
+
       }
 
       .row-fluid {
@@ -141,22 +146,26 @@
         margin: 0;
         padding: 0;
 
-        .col {
-          margin: 0;
-          width: 33.3333%;
-        }
-
-        .col-inner {
-          padding: 0 0.5em;
-          
-        }
-
-        .col1,
-        .col2 {
-          .col-inner {
-            border-right: 1px solid $vgrintra-graydusty;
+        @include small {
+          .col {
+            margin: 0;
+            width: 33.3333%;
           }
+
+          .col-inner {
+            padding: 0 0.5em;
+            
+          }
+
+          .col1,
+          .col2 {
+            .col-inner {
+              border-right: 1px solid $vgrintra-graydusty;
+            }
+          }
+
         }
+
 
       }
 
@@ -187,6 +196,24 @@
 
     }
 
+  }
+
+  > ul {
+    > li.selected {
+      .sub-menu-new {
+        .mega-drop {
+          display: block;
+
+          @include small {
+            display: none;
+
+            &.on {
+              display: block;
+            }
+          }
+        }
+      }     
+    }
   }
 
 }

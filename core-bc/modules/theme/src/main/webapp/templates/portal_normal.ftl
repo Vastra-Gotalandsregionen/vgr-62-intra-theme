@@ -41,22 +41,32 @@ ${theme.include(body_top_include)}
 			</div>
 		</#if>
 
+		<a href="#mobileMenuTrigger" id="mobileMenuTrigger">
+	        <span class="sr-only">Meny</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	    </a>
+		
+
 		<div id="topBar">
-				<div class="container-normal">
+			<div class="container-normal">
 
-					<a class="logo-vgr ${logo_css_class}" href="/">
+				<a class="logo-vgr ${logo_css_class}" href="/">
 
-						<#assign logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
+					<#assign logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
 
-						<#if layout.layoutSet.isLogo()>
-							<#assign logo_src = site_logo />
-						</#if>
+					<#if layout.layoutSet.isLogo()>
+						<#assign logo_src = site_logo />
+					</#if>
 
-						<img src="${logo_src}" alt="V&auml;stra G&ouml;talandsregionen" />
-					</a>
+					<img src="${logo_src}" alt="V&auml;stra G&ouml;talandsregionen" />
+				</a>
 
-					<div class="top-bar-tools">
+				<div class="top-bar-tools">
 
+					<div class="top-bar-navigation">
+						
 						<#if topnav_article_id?has_content>
 							<@includeWCD group_id=group_id article_id=topnav_article_id />
 						</#if>
@@ -67,15 +77,15 @@ ${theme.include(body_top_include)}
 							<a href="${sign_out_url}" id="signOut" class="signout" rel="nofollow">${sign_out_text}</a>
 						</#if>
 
-						<#if show_search>
-							<span class="top-search searchbox">
-								<#include "${full_templates_path}/search.ftl" />
-							</span>
-						</#if>
 					</div>
-
-
+					<#if show_search>
+						<span class="top-search searchbox">
+							<#include "${full_templates_path}/search.ftl" />
+						</span>
+					</#if>
 				</div>
+
+			</div>
 		</div>
 
 		<div id="navBar">
