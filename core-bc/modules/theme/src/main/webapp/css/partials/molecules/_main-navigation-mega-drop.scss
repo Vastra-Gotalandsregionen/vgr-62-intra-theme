@@ -1,5 +1,102 @@
+
+// .main-navigation {
+//   .sub-menu {
+
+//     position: absolute;
+//     left: 0;
+//     top: 100%;
+//     width: 100%;
+//     z-index: 2;
+
+//     .mega-drop {
+//       background: $vgrintra-white;
+//       border-top: 1px solid $vgrintra-alto;
+//       margin: 0 1em;
+//       display: none;
+//       position: absolute;
+//       text-align: left;
+//       top: -1px;
+//       width: 100%;
+//       @include clearfix(); // Needed for everything but Chrome
+//     	clear: both; // Needed for everything but Chrome
+
+//       @include medium {
+//         margin: 0;
+//         @include single-box-shadow(rgba(0, 0, 0, 0.2), $default-box-shadow-h-offset, 40px, 40px, $default-box-shadow-spread, $default-box-shadow-inset);
+//       }
+
+//       &.on {
+//         display: block;
+//       }
+
+//       .inner {
+//         @include medium {
+//           padding: 10px 0;
+//         }
+//       }
+
+//       ul {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         @include clearfix();
+//         text-align: center;
+
+//         li {
+//           display: inline;
+
+//           a {
+//             color: $vgrintra-tundora;
+//             display: inline-block;
+//             height: 3.0em;
+//             line-height: 3.0em;
+//             padding: 0 2.0em;
+//             text-decoration: none;
+
+//             &:hover {
+//               text-decoration: underline;
+//             }
+//           }
+
+//         }
+
+//       }
+
+
+//     }
+//   }
+// }
+
+
 .main-navigation {
-  .sub-menu {
+
+  position: relative;
+
+    // For development
+    > ul {
+      > li:nth-child(2) {
+        .sub-menu-new {
+          .mega-drop {
+            //display: block;  
+          }
+        }
+      }
+    }
+
+  // Move to partial main-navigation if used in production
+  > ul {
+    > li {
+      &.on {
+        > a {
+          background: $vgrintra-mercury;
+        }
+      }
+    }
+  }
+
+
+
+  .sub-menu-new {
 
     position: absolute;
     left: 0;
@@ -8,7 +105,7 @@
     z-index: 2;
 
     .mega-drop {
-      background: $vgrintra-white;
+      background: $vgrintra-mercury;
       border-top: 1px solid $vgrintra-alto;
       margin: 0 1em;
       display: none;
@@ -17,7 +114,7 @@
       top: -1px;
       width: 100%;
       @include clearfix(); // Needed for everything but Chrome
-    	clear: both; // Needed for everything but Chrome
+      clear: both; // Needed for everything but Chrome
 
       @include medium {
         margin: 0;
@@ -29,86 +126,67 @@
       }
 
       .inner {
+
+        background: $vgrintra-white;
+        margin: 1.0em;
+        padding: 1.0em;
+
         @include medium {
-          padding: 10px 0;
+          
         }
       }
 
-      ul {
-        list-style: none;
+      .row-fluid {
+
         margin: 0;
         padding: 0;
-        @include clearfix();
-        text-align: center;
 
-        li {
-          display: inline;
-
-          a {
-            color: $vgrintra-tundora;
-            display: inline-block;
-            height: 3.0em;
-            line-height: 3.0em;
-            padding: 0 2.0em;
-            text-decoration: none;
-
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-
+        .col {
+          margin: 0;
+          width: 33.3333%;
         }
 
-        /*
-        li {
-          display: block;
-          min-height: 70px;
-          position: relative;
-          width: 100%;
-          @include box-sizing(border-box);
-
-          @include medium {
-            float: left;
-            margin-left: 2.5641%;
-            width: 23.07692%;
-          }
-
-          &:nth-child(4n) {
-            margin-left: 0;
-          }
-
+        .col-inner {
+          padding: 0 0.5em;
+          
         }
-        */
+
+        .col1,
+        .col2 {
+          .col-inner {
+            border-right: 1px solid $vgrintra-graydusty;
+          }
+        }
+
       }
 
-      /*
-      a {
+      .child-nav-item {
         display: block;
-        margin: 0;
-        padding: 0;
-        line-height: 1.2em;
 
-        span {
+        a {
+          border-bottom: 1px dashed $vgrintra-silver;
+          color: $vgrintra-tundora;
           display: block;
-          padding: 0.6em 1.0em;
+          padding: 0.4em 0.7em;
+          text-decoration: none;
 
-          @include border-radius(3px);
-
-          @include transition-property(background-color);
-          @include transition-duration(0.25s);
-          @include transition-timing-function(ease-in-out);
-
+          &:hover {
+            background: $vgrintra-mercury;
+            text-decoration: none;
+          }
         }
 
-        &:hover {
-          span {
-            background-color: $vgrintra-mercury;
+        &:last-child {
+          a {
+            border-bottom: none;
           }
         }
 
       }
-      */
+
 
     }
+
   }
+
 }
