@@ -77,6 +77,13 @@
 	</#list>
 </#if>
 
+<#-- temporary only show seach for omni admin -->
+<#if show_search && is_omni_admin>
+	<#assign show_search = true />
+<#else>
+	<#assign show_search = false />
+</#if>
+
 <#------ Favorites ----------------------------------------------------------------------------------------------------------------->
 
 <#assign use_favorites_quickadd = true />
