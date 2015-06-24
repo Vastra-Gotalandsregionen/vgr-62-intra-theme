@@ -77,8 +77,8 @@
 	</#list>
 </#if>
 
-<#-- temporary only show seach for omni admin -->
-<#if show_search && is_omni_admin>
+<#-- temporary only show seach for omni admin and scope group owner/admin -->
+<#if show_search && (is_omni_admin || is_scope_group_admin || is_scope_group_owner)>
 	<#assign show_search = true />
 <#else>
 	<#assign show_search = false />
