@@ -131,7 +131,9 @@
   .row-2 {
     .span3 {
       .content-box {
-        min-height: 550px;
+        @include small {
+          min-height: 550px;
+        }
 
         &.we-are-vgr {
           min-height: auto;
