@@ -7,6 +7,8 @@
 @import 'compass';
 @import 'compass/typography/vertical_rhythm';
 @import 'compass/layout/grid-background'; //DEBUG: For showing grid background while developing.
+@import 'mixins';
+
 
 @import 'partials/utilities/variables';
 
@@ -46,7 +48,7 @@ body {
 		@import 'partials/molecules/ifeed-parsed';
 		@import 'partials/molecules/intra-list';
 		@import 'partials/molecules/intra-panel';
-    	@import 'partials/molecules/main-navigation';
+  	@import 'partials/molecules/main-navigation';
 		@import 'partials/molecules/main-navigation-mega-drop';
 		@import 'partials/molecules/mobile-navigation';
 		@import 'partials/molecules/navbar-tools';

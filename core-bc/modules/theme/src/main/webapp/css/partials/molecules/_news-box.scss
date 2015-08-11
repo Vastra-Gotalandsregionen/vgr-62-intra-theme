@@ -26,7 +26,7 @@
 
     .news-focused {
       display: block;
-      height: 280px;
+      max-height: 280px;
       overflow: hidden;
       position: relative;
       text-decoration: none;
@@ -36,16 +36,15 @@
       }
 
       img {
-        bottom: 0;
         display: block;
         max-width: 100%;
-        position: absolute;
         width: 100%;
-
-        @include small {
-          top: 0;
-        }
       }
+
+      @include small {
+        height: 280px;
+      }
+
 
       .news-info {
         background: $vgrintra-tundora;

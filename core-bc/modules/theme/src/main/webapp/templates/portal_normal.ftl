@@ -47,7 +47,7 @@ ${theme.include(body_top_include)}
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	    </a>
-		
+
 
 		<div id="topBar">
 			<div class="container-normal">
@@ -66,7 +66,7 @@ ${theme.include(body_top_include)}
 				<div class="top-bar-tools">
 
 					<div class="top-bar-navigation">
-						
+
 						<#if topnav_article_id?has_content>
 							<@includeWCD group_id=group_id article_id=topnav_article_id />
 						</#if>
