@@ -3,7 +3,7 @@
   > h2 {
     margin-top: 0;
   }
-  
+
   .news-item {
 
     .news-item-inner {
@@ -42,6 +42,29 @@
         }
       }
     }
+
+    .news-item-inner {
+      background: transparent url(../images/theme/news/allmant-okat.png) 0.5em 50% no-repeat;
+      padding: 1.2em 1.2em 1.2em 5.2em;
+    }
+
+
+    &.news-item-akut .news-item-inner { background-image: url(../images/theme/news/akut.png); }
+    &.news-item-allmant-okat .news-item-inner { background-image: url(../images/theme/news/allmant-okat.png); }
+    &.news-item-ekonomi .news-item-inner { background-image: url(../images/theme/news/ekonomi.png); }
+    &.news-item-folkhalsa .news-item-inner { background-image: url(../images/theme/news/folkhalsa.png); }
+    &.news-item-forskning .news-item-inner { background-image: url(../images/theme/news/forskning.png); }
+    &.news-item-fouu .news-item-inner { background-image: url(../images/theme/news/fouu.png); }
+    &.news-item-handelser .news-item-inner { background-image: url(../images/theme/news/handelser.png); }
+    &.news-item-human-rights .news-item-inner { background-image: url(../images/theme/news/human-rights.png); }
+    &.news-item-it-telefoni .news-item-inner { background-image: url(../images/theme/news/it-telefoni.png); }
+    &.news-item-miljo .news-item-inner { background-image: url(../images/theme/news/miljo.png); }
+    &.news-item-nyans .news-item-inner { background-image: url(../images/theme/news/nyans.png); }
+    &.news-item-patientvard-sakerhet .news-item-inner { background-image: url(../images/theme/news/patientvard-sakerhet.png); }
+    &.news-item-personal .news-item-inner { background-image: url(../images/theme/news/personal.png); }
+    &.news-item-sakerhet-pers-lokal .news-item-inner { background-image: url(../images/theme/news/sakerhet-pers-lokal.png); }
+    &.news-item-utveckling .news-item-inner { background-image: url(../images/theme/news/utveckling.png); }
+    &.news-item-vgr .news-item-inner { background-image: url(../images/theme/news/vgr.png); }
 
 
 
