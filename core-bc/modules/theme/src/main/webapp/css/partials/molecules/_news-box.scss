@@ -17,14 +17,14 @@
     text-transform: uppercase;
   }
 
-  .news-focused-wrap {
+  .news-featured-wrap {
 
     @include small {
       float: left;
       width: 64.5%;
     }
 
-    .news-focused {
+    .news-featured {
       display: block;
       max-height: 280px;
       overflow: hidden;
