@@ -54,7 +54,6 @@ body {
 		@import 'partials/molecules/navbar-tools';
 		@import 'partials/molecules/navigation-list';
 		@import 'partials/molecules/news-box';
-		@import 'partials/molecules/news-featured';
 		@import 'partials/molecules/news-listing';
 		@import 'partials/molecules/panic-btn';
 		@import 'partials/molecules/puff-box';
