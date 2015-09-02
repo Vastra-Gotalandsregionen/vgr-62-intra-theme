@@ -19,14 +19,17 @@
 
   .news-featured-wrap {
 
+    overflow: hidden;
+
     @include small {
       float: left;
+      height: 300px;
       width: 64.5%;
     }
 
     .news-featured {
       display: block;
-      max-height: 280px;
+      max-height: 300px;
       overflow: hidden;
       position: relative;
       text-decoration: none;
@@ -42,7 +45,7 @@
       }
 
       @include small {
-        height: 280px;
+
       }
 
 
