@@ -9,7 +9,7 @@
 		<template-extension>ftl</template-extension>
 		<settings>
 			<setting key="portlet-setup-show-borders-default" value="false" configurable="true" type="checkbox" />
-			<setting key="show-search" value="false" configurable="true" type="checkbox" />
+			<setting key="show-search" value="true" configurable="true" type="checkbox" />
 		</settings>
 
 	</theme>
