@@ -27,7 +27,7 @@
 				width: 100%;
 
 				@include small {
-					
+
 					max-width: 100%;
 				}
 			}
@@ -72,6 +72,11 @@
 					display: none;
 				}
 
+			}
+
+			[class^="icon-"],
+			[class*=" icon-"] {
+				color: $vgrintra-white;
 			}
 
 			a {
@@ -133,7 +138,7 @@
 			padding: 0;
 
 			@include small {
-				margin: 0 15%;	
+				margin: 0 15%;
 			}
 		}
 
