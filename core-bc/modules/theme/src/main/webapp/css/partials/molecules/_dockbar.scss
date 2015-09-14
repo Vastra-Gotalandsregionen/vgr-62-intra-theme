@@ -30,7 +30,6 @@
 					}
 				}
 
-
 			}
 
 		}
@@ -95,10 +94,7 @@
 
 			}
 		}
-	}
 
-	.dockbar-user-notifications {
-		display: none;
 	}
 
 }
@@ -128,6 +124,15 @@
 
 			}
 		}
+
+		.dockbar-user-notifications {
+			//display: none;
+			a.user-notification-link,
+			a.user-notification-link:visited {
+				color: $vgrintra-white;
+			}
+		}
+
 	}
 
 	.user-avatar-image {
